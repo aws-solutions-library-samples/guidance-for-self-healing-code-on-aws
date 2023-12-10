@@ -1,0 +1,225 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Resources for the LogDrivenBugFixer app
+
+Parameters:
+  ParameterStorePrefix:
+    Type: String
+    Description: The prefix used for Parameter Store values
+  CloudWatchLogGroupName:
+    Type: String
+    Description: The CloudWatch Log Group containing the application logs
+
+Globals:
+  Function:
+    Runtime: python3.9
+    Timeout: 60
+    CodeUri: ../src/
+
+Resources:
+  IssueTable:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: "pk"
+          AttributeType: "S"
+        - AttributeName: "sk"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "pk"
+          KeyType: "HASH"
+        - AttributeName: "sk"
+          KeyType: "RANGE"
+      BillingMode: PAY_PER_REQUEST
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      SSESpecification:
+        SSEEnabled: true
+        SSEType: "KMS"
+        KMSMasterKeyId: !Ref KmsKey
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+
+  KmsKey:
+    Type: "AWS::KMS::Key"
+    Properties:
+      Description: "KMS key for encrypting data in this project"
+      EnableKeyRotation: true
+      KeyPolicy:
+        Version: "2012-10-17"
+        Id: "kms-key-1"
+        Statement:
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Action:
+              - "kms:*"
+            Resource: "*"
+          - Effect: "Allow"
+            Principal:
+              Service: "dynamodb.amazonaws.com"
+            Action:
+              - "kms:Encrypt"
+              - "kms:Decrypt"
+            Resource: "*"
+            Condition:
+              StringEquals:
+                kms:CallerAccount: !Ref AWS::AccountId
+                kms:ViaService: !Sub dynamodb.${AWS::Region}.amazonaws.com
+
+  LambdaDlq: 
+    Type: AWS::SQS::Queue
+    Properties:
+      KmsMasterKeyId: !Ref KmsKey
+
+  TriageFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/triage.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterQueue:
+        Type: SQS
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Policies:
+        - Statement: 
+          - Effect: Allow
+            Action: 
+              - "sqs:SendMessage"
+              - "sqs:GetQueueAttributes"
+            Resource: 
+              - !GetAtt WorkerQueue.Arn
+              - !GetAtt LambdaDlq.Arn
+      Environment:
+        Variables:
+          WORKER_QUEUE_URL: !Ref WorkerQueue
+      Events:
+        Stream:
+          Type: DynamoDB
+          Properties:
+            Stream: !GetAtt IssueTable.StreamArn
+            BatchSize: 100
+            StartingPosition: TRIM_HORIZON
+
+  FixCodeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/fix_code.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterQueue:
+        Type: SQS
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Layers:
+        - !Sub arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14
+      Policies:
+        - Statement:
+          - Effect: Allow
+            Action:
+              - ssm:GetParameter
+              - ssm:GetParameters
+            Resource: 
+              - !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter${ParameterStorePrefix}*"
+          - Effect: Allow
+            Action:
+              - bedrock:InvokeModel
+            Resource: "*"
+        - Statement: 
+          - Effect: Allow
+            Action: 
+              - "sqs:SendMessage"
+              - "sqs:GetQueueAttributes"
+            Resource: 
+              - !GetAtt LambdaDlq.Arn
+      Events:
+        SqsEvent:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt WorkerQueue.Arn
+            BatchSize: 1
+      Environment:
+        Variables:
+          PARAMETER_STORE_PREFIX: !Ref ParameterStorePrefix
+
+  WorkerQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 60
+      KmsMasterKeyId: !Ref KmsKey
+      RedrivePolicy: 
+        deadLetterTargetArn: !GetAtt WorkerQueueDlq.Arn
+        maxReceiveCount: 1
+
+  WorkerQueueDlq: 
+    Type: AWS::SQS::Queue
+    Properties:
+      KmsMasterKeyId: !Ref KmsKey
+
+  QueuePolicy:
+    Type: "AWS::SQS::QueuePolicy"
+    Properties:
+      Queues:
+        - !Ref LambdaDlq
+        - !Ref WorkerQueue
+        - !Ref WorkerQueueDlq
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Action:
+              - "sqs:SendMessage"
+              - "sqs:ReceiveMessage"
+              - "sqs:DeleteMessage"
+              - "sqs:GetQueueAttributes"
+            Resource: 
+              - "*"
+            Condition:
+              Bool:
+                aws:SecureTransport: "true"
+
+  DetectErrorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/detect_error.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterQueue:
+        Type: SQS
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Events:
+        CloudWatchLogs:
+          Type: CloudWatchLogs
+          Properties:
+            LogGroupName:
+              Ref: CloudWatchLogGroupName
+            FilterPattern: "Traceback"
+      Policies:
+        - Statement: 
+          - Effect: Allow
+            Action: 
+              - dynamodb:UpdateItem
+            Resource: !GetAtt IssueTable.Arn
+        - Statement: 
+          - Effect: Allow
+            Action: 
+              - "sqs:SendMessage"
+              - "sqs:GetQueueAttributes"
+            Resource: 
+              - !GetAtt LambdaDlq.Arn
+      Environment:
+        Variables:
+          ISSUE_TABLE: !Ref IssueTable
+
+Outputs:
+  WorkerQueueUrl:
+    Description: "SQS queue to enqueue error log events"
+    Value: !Ref WorkerQueue
+  IssueTableName:
+    Description: "Name of the Issue DynamoDB table"
+    Value: !Ref IssueTable
+  IssueTableArn:
+    Description: "ARN of the Issue DynamoDB table"
+    Value: !GetAtt IssueTable.Arn
