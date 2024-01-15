@@ -14,7 +14,7 @@ Parameters:
 Globals:
   Function:
     Runtime: python3.9
-    Timeout: 60
+    Timeout: 900
     CodeUri: ../src/
 
 Resources:
