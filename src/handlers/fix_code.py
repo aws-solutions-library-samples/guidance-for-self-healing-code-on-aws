@@ -156,34 +156,3 @@ def create_source_code_map(repo_dir, filenames):
         with open(os.path.join(repo_dir, filename), "r") as f:
             source_code_map[filename] = f.read()
     return source_code_map
-
-
-# For local testing
-if __name__ == "__main__":
-    event = {
-        "Records": [
-            {
-                "messageId": "a61e6f8c-83dd-4b51-9366-0a5855887d5e",
-                "receiptHandle": "AQEBMpdpsQvqHFmlvP/0/E/1biz6GklyWDlYBH5eciOQ1sYqDvNiA=",
-                "body": '[ERROR] KeyError: \'order_items\'\nTraceback (most recent call last):\n  File "/var/task/sentry_sdk/integrations/aws_lambda.py", line 167, in sentry_handler\n    reraise(*exc_info)\n  File "/var/task/sentry_sdk/_compat.py", line 60, in reraise\n    raise value\n  File "/var/task/sentry_sdk/integrations/aws_lambda.py", line 158, in sentry_handler\n    return handler(aws_event, aws_context, *args, **kwargs)\n  File "/var/task/handlers/create_order.py", line 33, in handler\n    order_items = body["order_items"]',
-                "attributes": {
-                    "ApproximateReceiveCount": "1",
-                    "SentTimestamp": "1699930194542",
-                    "SenderId": "AIDAQKDVSB35LQ2CZQBP2",
-                    "ApproximateFirstReceiveTimestamp": "1699930194551",
-                },
-                "messageAttributes": {},
-                "md5OfBody": "bce70dff8848767342d5ea12d7fb93ba",
-                "eventSource": "aws:sqs",
-                "eventSourceARN": "arn:aws:sqs:us-east-1:0123456789:WorkerQueue-STtnBXg0hWqc",
-                "awsRegion": "us-east-1",
-            }
-        ]
-    }
-
-    class MockContext:
-        import time
-
-        aws_request_id = time.time()
-
-    handler(event, MockContext)

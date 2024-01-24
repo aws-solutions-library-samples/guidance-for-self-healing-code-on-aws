@@ -2,6 +2,7 @@ import os
 from abc import ABC, abstractmethod
 
 import requests
+from black import FileMode, format_str
 from git import Repo
 
 from utils import get_logger
@@ -24,13 +25,20 @@ def clone_repo(url, repo_dir, ssh_private_key_path):
     return repo
 
 
-def update_source_code(files, repo_dir):
+def update_source_code(files, repo_dir, format_code=True):
     """Overwrite files in target repo."""
     logger.info(f"Updating source code in {repo_dir}")
     for file in files:
+        if format_code:
+            contents = format(file["contents"])
         with open(os.path.join(repo_dir, file["filename"]), "w") as f:
             logger.info(f'Writing to {file["filename"]}')
-            f.write(file["contents"])
+            f.write(contents)
+
+
+def format(content):
+    """Format code."""
+    return format_str(content, mode=FileMode())
 
 
 def create_branch(branch_name, repo, commit_message):
