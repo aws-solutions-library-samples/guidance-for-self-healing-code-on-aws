@@ -1,0 +1,259 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-2mqj-m65w-jghx",
+    "dataSource": "https://github.com/advisories/GHSA-2mqj-m65w-jghx",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-2mqj-m65w-jghx"
+    ],
+    "description": "Untrusted search path under some conditions on Windows allows arbitrary code execution",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.1.41"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22190",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22190",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/gitpython-developers/GitPython/commit/ef3192cc414f2fd9978908454f6fd95243784c7f",
+      "https://github.com/gitpython-developers/GitPython/pull/1792",
+      "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-2mqj-m65w-jghx"
+     ],
+     "description": "GitPython is a python library used to interact with Git repositories. There is an incomplete fix for CVE-2023-40590. On Windows, GitPython uses an untrusted search path if it uses a shell to run `git`, as well as when it runs `bash.exe` to interpret hooks. If either of those features are used on Windows, a malicious `git.exe` or `bash.exe` may be run from an untrusted repository. This issue has been patched in version 3.1.41.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "GitPython",
+       "version": "3.1.37"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.1.41 (python)",
+      "vulnerabilityID": "GHSA-2mqj-m65w-jghx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "943529ee072399fc",
+    "name": "GitPython",
+    "version": "3.1.37",
+    "type": "python",
+    "locations": [
+     {
+      "path": "/results/syft/sbom"
+     }
+    ],
+    "language": "python",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:pypi/GitPython@3.1.37",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "directory",
+  "target": "/src"
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.1",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": false,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/probe/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": false,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-01-30T01:24:05Z",
+   "schemaVersion": 5,
+   "location": "/home/probe/.cache/grype/db/5",
+   "checksum": "sha256:5ef0dac6b2c0d27020fa4e3557b303b0786bedc5937aea19bb8f78e74518cabf",
+   "error": null
+  },
+  "timestamp": "2024-01-30T14:43:54.063041263Z"
+ }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "filename": "/src/cloudformation/template.yaml",
+    "file_results": {
+      "failure_count": 0,
+      "violations": [
+
+      ]
+    }
+  },
+  {
+    "filename": "/src/results/probe_report.json",
+    "file_results": {
+      "failure_count": 0,
+      "violations": [
+
+      ]
+    }
+  },
+  {
+    "filename": "/src/results/sbom_report.json",
+    "file_results": {
+      "failure_count": 0,
+      "violations": [
+
+      ]
+    }
+  },
+  {
+    "filename": "/src/sam/template.yaml",
+    "file_results": {
+      "failure_count": 0,
+      "violations": [
+
+      ]
+    }
+  }
+]

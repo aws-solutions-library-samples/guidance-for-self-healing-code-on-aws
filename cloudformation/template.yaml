@@ -1,0 +1,441 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Resources for the LogDrivenBugFixer app
+
+Parameters:
+  ParameterStorePrefix:
+    Type: String
+    Description: The prefix used for Parameter Store values
+  CloudWatchLogGroupName:
+    Type: String
+    Description: The CloudWatch Log Group containing the application logs
+
+Resources:
+  KmsKey:
+    Type: "AWS::KMS::Key"
+    Metadata:
+      cfn_guard:
+        rules_to_suppress:
+          - id: aws_kms_key_policy_action_does_not_have_wildcards
+            reason: "Wildcards are used in account delegation which is needed. Access for DynamoDB is restricted using a condition"
+      checkov:
+        rules_to_suppress:
+          - id: aws_kms_key_policy_action_does_not_have_wildcards
+            reason: "Wildcards are used in account delegation which is needed. Access for DynamoDB is restricted using a condition"
+    Properties:
+      Description: "KMS key for encrypting data in this project"
+      EnableKeyRotation: true
+      KeyPolicy:
+        Version: "2012-10-17"
+        Id: "kms-key-1"
+        Statement:
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Action:
+              - "kms:*"
+            Resource: "*"
+          - Effect: "Allow"
+            Principal:
+              Service: "dynamodb.amazonaws.com"
+            Action:
+              - "kms:Encrypt"
+              - "kms:Decrypt"
+            Resource: "*"
+            Condition:
+              StringEquals:
+                kms:CallerAccount: !Ref AWS::AccountId
+                kms:ViaService: !Sub dynamodb.${AWS::Region}.amazonaws.com
+
+  IssueTable:
+    Metadata:
+      cfn_guard:
+        rules_to_suppress:
+          - id: aws_dynamodb_table_deletion_protection
+            reason: "Deletion protection can be turned on as per requirement of the solution consumers"
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      DeletionProtectionEnabled: false
+      AttributeDefinitions:
+        - AttributeName: "pk"
+          AttributeType: "S"
+        - AttributeName: "sk"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "pk"
+          KeyType: "HASH"
+        - AttributeName: "sk"
+          KeyType: "RANGE"
+      BillingMode: PAY_PER_REQUEST
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      SSESpecification:
+        SSEEnabled: true
+        SSEType: "KMS"
+        KMSMasterKeyId: !Ref KmsKey
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+
+  LambdaDlq:
+    Type: AWS::SQS::Queue
+    Properties:
+      KmsMasterKeyId: !Ref KmsKey
+
+  WorkerQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 900
+      KmsMasterKeyId: !Ref KmsKey
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt WorkerQueueDlq.Arn
+        maxReceiveCount: 1
+
+  WorkerQueueDlq:
+    Type: AWS::SQS::Queue
+    Properties:
+      KmsMasterKeyId: !Ref KmsKey
+
+  QueuePolicy:
+    Type: "AWS::SQS::QueuePolicy"
+    Properties:
+      Queues:
+        - !Ref LambdaDlq
+        - !Ref WorkerQueue
+        - !Ref WorkerQueueDlq
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Action:
+              - "sqs:SendMessage"
+              - "sqs:ReceiveMessage"
+              - "sqs:DeleteMessage"
+              - "sqs:GetQueueAttributes"
+            Resource:
+              - "*"
+            Condition:
+              Bool:
+                aws:SecureTransport: "true"
+
+  TriageFunctionRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F3
+            reason: "Log Group name are dynamic. Hence * is used in the policy"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: "KMSKeyAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: "Allow"
+                Action:
+                  - "kms:Encrypt"
+                  - "kms:Decrypt"
+                  - "kms:GenerateDataKey"
+                Resource: !GetAtt KmsKey.Arn
+        - PolicyName: "SQSAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:GetQueueAttributes"
+                Resource:
+                  - !GetAtt WorkerQueue.Arn
+                  - !GetAtt LambdaDlq.Arn
+        - PolicyName: "DynamoDBAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "dynamodb:GetItem"
+                  - "dynamodb:PutItem"
+                  - "dynamodb:Query"
+                Resource:
+                  - !GetAtt IssueTable.Arn
+        - PolicyName: "DynamoDBStreamAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "dynamodb:DescribeStream"
+                  - "dynamodb:GetRecords"
+                  - "dynamodb:GetShardIterator"
+                  - "dynamodb:ListStreams"
+                Resource:
+                  - !GetAtt IssueTable.StreamArn
+        - PolicyName: CloudWatchLogsAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:*
+                Resource: arn:aws:logs:*:*:*
+
+  TriageFunction:
+    Type: AWS::Lambda::Function
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_117"
+            comment: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+      cfn_nag:
+        rules_to_suppress:
+          - id: W89
+            reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+    Properties:
+      Runtime: python3.9
+      Timeout: 900
+      Code: package/
+      Handler: handlers/triage.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterConfig:
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Role: !GetAtt TriageFunctionRole.Arn
+      Environment:
+        Variables:
+          WORKER_QUEUE_URL: !Ref WorkerQueue
+
+  TriageFunctionEventSourceMapping:
+    Type: AWS::Lambda::EventSourceMapping
+    Properties:
+      FunctionName: !GetAtt TriageFunction.Arn
+      EventSourceArn: !GetAtt IssueTable.StreamArn
+      BatchSize: 100
+      Enabled: true
+      StartingPosition: TRIM_HORIZON
+
+  FixCodeFunctionRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F3
+            reason: "Log Group name are dynamic. Hence * is used in the policy"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: "SSMParameterAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ssm:GetParameter
+                  - ssm:GetParameters
+                Resource:
+                  - !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter${ParameterStorePrefix}*"
+        - PolicyName: "BedRockAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - bedrock:InvokeModel
+                Resource: "arn:aws:bedrock:*::foundation-model/*"
+        - PolicyName: "KMSKeyAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: "Allow"
+                Action:
+                  - "kms:Encrypt"
+                  - "kms:Decrypt"
+                Resource: !GetAtt KmsKey.Arn
+        - PolicyName: "SQSAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sqs:ReceiveMessage"
+                  - "sqs:DeleteMessage"
+                  - "sqs:GetQueueAttributes"
+                Resource:
+                  - !GetAtt WorkerQueue.Arn
+        - PolicyName: "DLQAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:GetQueueAttributes"
+                Resource:
+                  - !GetAtt LambdaDlq.Arn
+        - PolicyName: CloudWatchLogsAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:*
+                Resource: arn:aws:logs:*:*:*
+
+  FixCodeFunction:
+    Type: AWS::Lambda::Function
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_117"
+            comment: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+      cfn_nag:
+        rules_to_suppress:
+          - id: W89
+            reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+    Properties:
+      Runtime: python3.9
+      Timeout: 900
+      Code: package/
+      Handler: handlers/fix_code.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterConfig:
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Layers:
+        - !Sub arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14
+      Role: !GetAtt FixCodeFunctionRole.Arn
+      Environment:
+        Variables:
+          PARAMETER_STORE_PREFIX: !Ref ParameterStorePrefix
+
+  FixCodeFunctionEventSourceMapping:
+    Type: AWS::Lambda::EventSourceMapping
+    Properties:
+      FunctionName: !GetAtt FixCodeFunction.Arn
+      EventSourceArn: !GetAtt WorkerQueue.Arn
+      BatchSize: 1
+      Enabled: true
+
+  DetectErrorFunctionRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F3
+            reason: "Log Group name are dynamic. Hence * is used in the policy"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: "KMSKeyAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: "Allow"
+                Action:
+                  - "kms:Encrypt"
+                  - "kms:Decrypt"
+                Resource: !GetAtt KmsKey.Arn
+        - PolicyName: "DDBAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "dynamodb:UpdateItem"
+                Resource: !GetAtt IssueTable.Arn
+        - PolicyName: "DLQAccess"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:GetQueueAttributes"
+                Resource:
+                  - !GetAtt LambdaDlq.Arn
+        - PolicyName: CloudWatchLogsAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:*
+                Resource: arn:aws:logs:*:*:*
+
+  DetectErrorFunction:
+    Type: AWS::Lambda::Function
+    Metadata:
+      checkov:
+        skip:
+          - id: "CKV_AWS_117"
+            comment: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+      cfn_nag:
+        rules_to_suppress:
+          - id: W89
+            reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
+    Properties:
+      Runtime: python3.9
+      Timeout: 900
+      Code: package/
+      Handler: handlers/detect_error.handler
+      ReservedConcurrentExecutions: 10
+      DeadLetterConfig:
+        TargetArn: !GetAtt LambdaDlq.Arn
+      KmsKeyArn: !GetAtt KmsKey.Arn
+      Role: !GetAtt DetectErrorFunctionRole.Arn
+      Environment:
+        Variables:
+          ISSUE_TABLE: !Ref IssueTable
+
+  CloudWatchLambdaPermissions:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt DetectErrorFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: logs.amazonaws.com
+      SourceAccount: !Ref AWS::AccountId
+      SourceArn: !Sub arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:${CloudWatchLogGroupName}:*
+
+  CloudWatchSubscriptionFilter:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      DestinationArn: !GetAtt DetectErrorFunction.Arn
+      FilterPattern: "Traceback"
+      LogGroupName: !Ref CloudWatchLogGroupName
+
+Outputs:
+  WorkerQueueUrl:
+    Description: "SQS queue to enqueue error log events"
+    Value: !Ref WorkerQueue
+  IssueTableName:
+    Description: "Name of the Issue DynamoDB table"
+    Value: !Ref IssueTable
+  IssueTableArn:
+    Description: "ARN of the Issue DynamoDB table"
+    Value: !GetAtt IssueTable.Arn

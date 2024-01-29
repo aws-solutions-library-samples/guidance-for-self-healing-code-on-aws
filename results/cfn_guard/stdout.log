@@ -1,0 +1,3802 @@
+Other
+template.yaml Status = SKIP
+SKIP rules
+certificate-transparency-logging.guard/aws_acm_certificate_transparency_logging    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_acm_certificate_transparency_logging
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-has-endpoint-config.guard/aws_apigateway_domain_endpoint_configuration    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_domain_endpoint_configuration
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-has-name.guard/aws_apigateway_domain_has_name    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_domain_has_name
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-has-regional-certificate.guard/aws_apigateway_domain_has_regional_certificate    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_domain_has_regional_certificate
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-has-security-policy.guard/aws_apigateway_domain_has_security_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_domain_has_security_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+restapi-no-public.guard/aws_apigateway_restapi_no_public    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_restapi_no_public
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+stage-access-logging-enabled.guard/aws_apigateway_stage_access_logging    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_stage_access_logging
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+stage-client-certificate-enabled.guard/aws_apigateway_stage_client_certificate_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_stage_client_certificate_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+stage-tracing-enabled.guard/aws_apigateway_stage_tracing_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_apigateway_stage_tracing_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cache-at-rest-encryption.guard/aws_appsync_cache_at_rest_encryption    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_cache_at_rest_encryption
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cache-in-transit-encryption.guard/aws_appsync_cache_in_transit_encryption    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_cache_in_transit_encryption
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+graphql-api-authentication.guard/aws_appsync_graphql_api_authentication    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_graphql_api_authentication
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+graphql-api-logging-enabled.guard/aws_appsync_graphql_api_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_graphql_api_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+graphql-api-webacl-associated.guard/aws_appsync_graphql_api_webacl_associated    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_graphql_api_webacl_associated
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+graphql-api-xray-enabled.guard/aws_appsync_graphql_api_xray_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_appsync_graphql_api_xray_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+workgroup-results-encrypted.guard/aws_athena_workgroups_results_encrypted    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_athena_workgroups_results_encrypted
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-cooldown.guard/aws_autoscaling_group_cooldown    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_autoscaling_group_cooldown
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-scaling-notifications.guard/aws_autoscaling_group_notifications    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_autoscaling_group_notifications
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+launchconfiguration-public-ip-disabled.guard/aws_autoscaling_launch_configuration_public_ip_disabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_autoscaling_launch_configuration_public_ip_disabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+plan-cleanup.guard/aws_backup_plan_cleanup    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_backup_plan_cleanup
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+plan-minimum-retention.guard/aws_backup_plan_min_retention_35_days    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_backup_plan_min_retention_35_days
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vault-access-policy.guard/aws_backup_vault_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_backup_vault_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vault-encrypted-cmk.guard/aws_backup_vault_encrypted_cmk    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_backup_vault_encrypted_cmk
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+budget-notifications-enabled.guard/aws_budgets_notification    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_budgets_notification
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+environmentec2-ssm-ingress.guard/aws_cloud9_environmentec2_ssm_ingress    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloud9_environmentec2_ssm_ingress
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-geo-restrictions-enabled.guard/aws_cloudfront_distribution_geo_restriction    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_geo_restriction
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-logging-enabled.guard/aws_cloudfront_distribution_logging    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_logging
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-origin-outdated-ssl.guard/aws_cloudfront_distribution_deprecated_ssl_protocols    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_deprecated_ssl_protocols
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-required-cache-behavior.guard/aws_cloudfront_distribution_required_cache_behaviours    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_required_cache_behaviours
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-s3-origin-access-identity.guard/aws_cloudfront_distribution_s3_origin_access_identity    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_s3_origin_access_identity
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-tls-to-custom-origin.guard/aws_cloudfront_distribution_tls_to_custom_origin    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_tls_to_custom_origin
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-viewercertificate-outdatated-ssl.guard/aws_cloudfront_distribution_outdated_ssl    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_outdated_ssl
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-viewercertificate-sni-only.guard/aws_cloudfront_distribution_sni_only    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_sni_only
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-viewercertificate-uses-acm.guard/aws_cloudfront_distribution_uses_acm    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_uses_acm
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+distribution-waf-associated.guard/aws_cloudfront_distribution_waf_associated    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudfront_distribution_waf_associated
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+trail-global-service-events.guard/aws_cloudtrail_trail_global_service_events    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudtrail_trail_global_service_events
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+trail-is-enabled.guard/aws_cloudtrail_trail_is_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudtrail_trail_is_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+trail-is-encrypted.guard/aws_cloudtrail_trail_is_encrypted    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudtrail_trail_is_encrypted
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+trail-is-multi-region.guard/aws_cloudtrail_trail_is_multi_region    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudtrail_trail_is_multi_region
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+trail-log-validation.guard/aws_cloudtrail_trail_log_validation    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudtrail_trail_log_validation
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+alarm-enabled-with-actions.guard/aws_cloudwatch_alarm_action_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cloudwatch_alarm_action_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+project-is-encrypted.guard/aws_codebuild_projects_must_be_encrypted_using_kms    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_codebuild_projects_must_be_encrypted_using_kms
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+project-no-plaintext-creds.guard/aws_codebuild_project_env_variables_plaintext_creds    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_codebuild_project_env_variables_plaintext_creds
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+project-no-privileged-mode.guard/aws_codebuild_projects_must_use_standard_image    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_codebuild_projects_must_use_standard_image
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+project-uses-standard-image.guard/aws_codebuild_projects_must_not_use_privileged_mode    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_codebuild_projects_must_not_use_privileged_mode
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+sourcecredential-use-oauth.guard/aws_codebuild_sourcecredential_use_oauth    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_codebuild_sourcecredential_use_oauth
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+userpool-advanced-security-mode.guard/aws_cognito_userpool_advanced_security_mode    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cognito_userpool_advanced_security_mode
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+userpool-mfa-enabled.guard/aws_cognito_userpool_mfa    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cognito_userpool_mfa
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+userpool-password-policy.guard/aws_cognito_userpool_secure_password_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_cognito_userpool_secure_password_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+configurationrecorder-global-enabled.guard/aws_config_configurationrecorder_global_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_config_configurationrecorder_global_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationinstance-no-public.guard/aws_dms_replicationinstance_no_public    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_dms_replicationinstance_no_public
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-backup-retention.guard/aws_documentdb_cluster_backup_retention_period    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_documentdb_cluster_backup_retention_period
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-deletion-protection.guard/aws_documentdb_cluster_deletion_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_documentdb_cluster_deletion_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-encryption-at-rest.guard/aws_documentdb_cluster_encryption_at_rest    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_documentdb_cluster_encryption_at_rest
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dax-cluster-encryption-at-rest.guard/aws_dax_cluster_encryption_at_rest    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_dax_cluster_encryption_at_rest
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dax-cluster-encryption-in-transit.guard/aws_dax_encryption_in_transit    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_dax_encryption_in_transit
+compliant: []
+Other
+template.yaml Status = FAIL
+FAILED rules
+table-deletion-protection.guard/aws_dynamodb_table_deletion_protection    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_dynamodb_table_deletion_protection
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Binary:
+              context: " DeletionPolicy EQUALS  \"Retain\""
+              messages:
+                custom_message: DynamoDB Table - Deletion Policy must be set to retain
+                error_message: "Check was not compliant as property [DeletionPolicy] to compare from is missing. Value traversed to [Path=/Resources/IssueTable[L:57,C:12] Value={\"Metadata\":{\"cfn_guard\":{\"rules_to_suppress\":[{\"id\":\"aws_dynamodb_table_deletion_protection\",\"reason\":\"Deletion protection can be turned on as per requirement of the solution consumers\"}]}},\"Type\":\"AWS::DynamoDB::Table\",\"Properties\":{\"DeletionProtectionEnabled\":false,\"AttributeDefinitions\":[{\"AttributeName\":\"pk\",\"AttributeType\":\"S\"},{\"AttributeName\":\"sk\",\"AttributeType\":\"S\"}],\"KeySchema\":[{\"AttributeName\":\"pk\",\"KeyType\":\"HASH\"},{\"AttributeName\":\"sk\",\"KeyType\":\"RANGE\"}],\"BillingMode\":\"PAY_PER_REQUEST\",\"StreamSpecification\":{\"StreamViewType\":\"NEW_AND_OLD_IMAGES\"},\"SSESpecification\":{\"SSEEnabled\":true,\"SSEType\":\"KMS\",\"KMSMasterKeyId\":{\"Ref\":\"KmsKey\"}},\"PointInTimeRecoverySpecification\":{\"PointInTimeRecoveryEnabled\":true}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/IssueTable
+                      value:
+                        Metadata:
+                          cfn_guard:
+                            rules_to_suppress:
+                              - id: aws_dynamodb_table_deletion_protection
+                                reason: Deletion protection can be turned on as per requirement of the solution consumers
+                        Type: "AWS::DynamoDB::Table"
+                        Properties:
+                          DeletionProtectionEnabled: false
+                          AttributeDefinitions:
+                            - AttributeName: pk
+                              AttributeType: S
+                            - AttributeName: sk
+                              AttributeType: S
+                          KeySchema:
+                            - AttributeName: pk
+                              KeyType: HASH
+                            - AttributeName: sk
+                              KeyType: RANGE
+                          BillingMode: PAY_PER_REQUEST
+                          StreamSpecification:
+                            StreamViewType: NEW_AND_OLD_IMAGES
+                          SSESpecification:
+                            SSEEnabled: true
+                            SSEType: KMS
+                            KMSMasterKeyId:
+                              Ref: KmsKey
+                          PointInTimeRecoverySpecification:
+                            PointInTimeRecoveryEnabled: true
+                    remaining_query: DeletionPolicy
+                    reason: "Could not find key DeletionPolicy inside struct at path /Resources/IssueTable[L:57,C:12]"
+                  comparison:
+                    - Eq
+                    - false
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+table-explicit-attribute-definition.guard/aws_dynamodb_table_explicit_attribute_definition    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_dynamodb_table_explicit_attribute_definition
+Other
+template.yaml Status = PASS
+PASS rules
+table-explicit-key-schema.guard/aws_dynamodb_table_explicit_key_schema    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_dynamodb_table_explicit_key_schema
+Other
+template.yaml Status = PASS
+PASS rules
+table-kms-encrypted.guard/aws_dynamodb_table_sse_customer_managed_cmk    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_dynamodb_table_sse_customer_managed_cmk
+Other
+template.yaml Status = PASS
+PASS rules
+table-pitr-enabled.guard/aws_dynamodb_table_pitr_enabled    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_dynamodb_table_pitr_enabled
+Other
+template.yaml Status = SKIP
+SKIP rules
+ebs-encryption-enabled.guard/aws_ec2_ebs_encryption    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_ebs_encryption
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+instanace-termination-protection.guard/aws_ec2_instance_termination_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_instance_termination_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+instance-detailed-monitoring.guard/aws_ec2_instance_detailed_monitoring_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_instance_detailed_monitoring_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+instance-ebs-delete-on-termination.guard/aws_ec2_ebs_attached_volume_delete_on_termination_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_ebs_attached_volume_delete_on_termination_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+instance-ebs-optimization.guard/aws_ec2_instance_ebs_optimized    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_instance_ebs_optimized
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+instance-iam-associated.guard/aws_ec2_iam_associated    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_iam_associated
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-has-description.guard/aws_ec2_security_group_has_description    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_has_description
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-insecure-ports.guard/aws_ec2_security_group_insecure_ports    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_insecure_ports
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-unrestricted-egress-ports.guard/aws_ec2_security_group_unrestricted_egress_ports    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_unrestricted_egress_ports
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-unrestricted-inbound.guard/aws_ec2_security_group_unrestricted_inbound    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_unrestricted_inbound
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-unrestricted-ingress-ports.guard/aws_ec2_security_group_unrestricted_ingress_ports    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_unrestricted_ingress_ports
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+security-group-unrestricted-outbound.guard/aws_ec2_security_group_unrestricted_outbound    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_security_group_unrestricted_outbound
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+subnet-no-public-ip-on-launch.guard/aws_ec2_subnet_auto_assign_ip_disabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_subnet_auto_assign_ip_disabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vpc-endpoint-ddb.guard/aws_ec2_vpc_ddb_endpoint_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_vpc_ddb_endpoint_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vpc-endpoint-kms.guard/aws_ec2_vpc_kms_endpoint_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_vpc_kms_endpoint_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vpc-endpoint-s3.guard/aws_ec2_vpc_s3_endpoint_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_vpc_s3_endpoint_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vpc-has-flow-logs.guard/aws_ec2_vpc_must_have_flow_log_configuration    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_vpc_must_have_flow_log_configuration
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+vpc-no-nacls.guard/aws_ec2_vpc_must_not_use_network_acls    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ec2_vpc_must_not_use_network_acls
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+repository-encrypted-at-rest.guard/aws_ecr_repository_kms_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ecr_repository_kms_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+repository-lifecycle-policy.guard/aws_ecr_repository_lifecycle_policies    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ecr_repository_lifecycle_policies
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+repository-resource-policy.guard/aws_ecr_repository_resource_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ecr_repository_resource_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+repository-scan-on-push.guard/aws_ecr_repository_scan_on_push    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_ecr_repository_scan_on_push
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+filesystem-encrypted-at-rest-cmk.guard/aws_efs_filesystem_cmk_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_efs_filesystem_cmk_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+filesystem-encrypted-at-rest.guard/aws_efs_filesystem_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_efs_filesystem_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-control-plane-logging.guard/aws_eks_cluster_control_plane_logging    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_eks_cluster_control_plane_logging
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-kms-encrypted.guard/aws_eks_cluster_secrets_encrypted    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_eks_cluster_secrets_encrypted
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-public-control-plane-disabled.guard/aws_eks_cluster_private_only    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_eks_cluster_private_only
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-public-control-plane-restricted.guard/aws_eks_cluster_control_plane_public_access_restricted    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_eks_cluster_control_plane_public_access_restricted
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-in-vpc.guard/aws_elasticache_replicationgroup_in_vpc    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_in_vpc
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-backups-enabled.guard/aws_elasticache_replicationgroup_backups_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_backups_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-encryption-at-rest.guard/aws_elasticache_replicationgroup_encryption_at_rest    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_encryption_at_rest
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-encryption-in-transit.guard/aws_elasticache_replicationgroup_encryption_in_transit    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_encryption_in_transit
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-multi-az.guard/aws_elasticache_replicationgroup_multi_az    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_multi_az
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-non-default-port.guard/aws_elasticache_replicationgroup_non_default_port    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_non_default_port
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+replicationgroup-redis-snapshot-retention.guard/aws_elasticache_replicationgroup_snapshot_retention_period    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elasticache_replicationgroup_snapshot_retention_period
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+domain-deprecated.guard/aws_elasticsearch_domain_deprecated    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_elasticsearch_domain_deprecated
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-access-logging-enabled.guard/aws_elb_loadbalancer_access_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_access_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-connection-draining-enabled.guard/aws_elb_loadbalancer_connection_draining    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_connection_draining
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-cross-zone-enabled.guard/aws_elb_loadbalancer_cross_zone_load_balancing    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_cross_zone_load_balancing
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-in-vpc.guard/aws_elb_loadbalancer_in_vpc    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_in_vpc
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-no-public.guard/aws_elb_loadbalancer_no_public    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_no_public
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-use-ssl.guard/aws_elb_loadbalancer_use_ssl    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elb_loadbalancer_use_ssl
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-access-logging-enabled.guard/aws_elbv2_loadbalancer_access_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elbv2_loadbalancer_access_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-cross-zone-enabled.guard/aws_elbv2_loadbalancer_cross_zone_load_balancing    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elbv2_loadbalancer_cross_zone_load_balancing
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-deletion-protection-enabled.guard/aws_elbv2_loadbalancer_deletion_protection_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elbv2_loadbalancer_deletion_protection_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+loadbalancer-drop-invalid-headers.guard/aws_elbv2_loadbalancer_drop_invalid_headers    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_elbv2_loadbalancer_drop_invalid_headers
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-access-logs-enabled.guard/aws_emr_cluster_access_logs_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_emr_cluster_access_logs_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-access-logs-encrypted.guard/aws_emr_cluster_access_logs_encrypted    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_emr_cluster_access_logs_encrypted
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-kerberos-enabled.guard/aws_emr_cluster_kerberos_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_emr_cluster_kerberos_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+event-bus-has-policy.guard/aws_events_event_bus_has_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_events_event_bus_has_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+event-bus-policy-no-wildcards.guard/aws_events_event_bus_policy_no_wildcards    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_events_event_bus_policy_no_wildcards
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+filesystem-automated-backups-enabled.guard/aws_fsx_filesystem_automated_backups_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_fsx_filesystem_automated_backups_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+filesystem-encrypted.guard/aws_fsx_filesystem_encryption_customer_cmk    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_fsx_filesystem_encryption_customer_cmk
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+filesystem-multi-az-enabled.guard/aws_fsx_filesystem_multi_az    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_fsx_filesystem_multi_az
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-inline-policy.guard/aws_iam_group_no_inline_policies    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_no_inline_policies
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-sensitive-iam.guard/aws_iam_group_no_sensitive_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_no_sensitive_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-assume-role.guard/aws_iam_group_no_unrestricted_assume_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_no_unrestricted_assume_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-lambda-invoke.guard/aws_iam_group_unrestricted_lambda_invoke    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_unrestricted_lambda_invoke
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-pass-role.guard/aws_iam_group_unrestriced_pass_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_unrestriced_pass_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-s3-full.guard/aws_iam_group_s3_full_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_s3_full_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-s3-read.guard/aws_iam_group_s3_read_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_s3_read_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+group-no-unrestricted-secretsmanager.guard/aws_iam_group_unrestricted_secretsmanager    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_group_unrestricted_secretsmanager
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-notaction.guard/aws_iam_managed_policy_no_not_action    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_no_not_action
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-sensitive-iam.guard/aws_iam_managed_policy_no_sensitive_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_no_sensitive_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-assume-role.guard/aws_iam_managed_policy_no_unrestricted_assume_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_no_unrestricted_assume_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-lambda-invoke.guard/aws_iam_managed_policy_unrestricted_lambda_invoke    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_unrestricted_lambda_invoke
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-pass-role.guard/aws_iam_managed_policy_unrestriced_pass_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_unrestriced_pass_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-s3-full.guard/aws_iam_managed_policy_s3_full_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_s3_full_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-s3-read.guard/aws_iam_managed_policy_s3_read_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_s3_read_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-unrestricted-secretsmanager.guard/aws_iam_managed_policy_unrestricted_secretsmanager    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_managed_policy_unrestricted_secretsmanager
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+managed-policy-no-wildcard-action.guard/aws_iam_no_wild_card_in_managed_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_no_wild_card_in_managed_policy
+compliant: []
+Parsing error handling rule file = managed-policy-no-wildcard-resource.guard, Error = Parser Error when parsing Parsing Error Error parsing file managed-policy-no-wildcard-resource.guard at line 1 at column 1, when handling , fragment 
+
+---
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-notaction.guard/aws_iam_policy_no_not_action    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_no_not_action
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-sensitive-iam.guard/aws_iam_policy_no_sensitive_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_no_sensitive_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-assume-role.guard/aws_iam_policy_no_unrestricted_assume_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_no_unrestricted_assume_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-lambda-invoke.guard/aws_iam_policy_unrestricted_lambda_invoke    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_unrestricted_lambda_invoke
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-pass-role.guard/aws_iam_policy_unrestriced_pass_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_unrestriced_pass_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-s3-full.guard/aws_iam_policy_s3_full_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_s3_full_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-s3-read.guard/aws_iam_policy_s3_read_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_s3_read_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-unrestricted-secretsmanager.guard/aws_iam_policy_unrestricted_secretsmanager    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_unrestricted_secretsmanager
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-wildcard-action.guard/aws_iam_policy_no_wild_card_action    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_no_wild_card_action
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+policy-no-wildcard-resource.guard/aws_iam_policy_no_wild_card_resource    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_policy_no_wild_card_resource
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-assume-public.guard/aws_iam_role_assume_public    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_assume_public
+Other
+template.yaml Status = SKIP
+SKIP rules
+role-no-aws-managed-policy.guard/aws_iam_role_no_attached_aws_managed_policies    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_role_no_attached_aws_managed_policies
+compliant: []
+Other
+template.yaml Status = FAIL
+FAILED rules
+role-no-inline-policy.guard/aws_iam_role_no_inline_policies    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_iam_role_no_inline_policies
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Unary:
+              context: " Policies not EXISTS  "
+              messages:
+                custom_message: Inline policies found with IAM role
+                error_message: "Check was not compliant as property [/Resources/TriageFunctionRole/Properties/Policies[L:146,C:8]] existed."
+              check:
+                Resolved:
+                  value:
+                    path: /Resources/TriageFunctionRole/Properties/Policies
+                    value:
+                      - PolicyName: KMSKeyAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "kms:Encrypt"
+                                - "kms:Decrypt"
+                                - "kms:GenerateDataKey"
+                              Resource:
+                                "Fn::GetAtt": KmsKey.Arn
+                      - PolicyName: SQSAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "sqs:SendMessage"
+                                - "sqs:GetQueueAttributes"
+                              Resource:
+                                - "Fn::GetAtt": WorkerQueue.Arn
+                                - "Fn::GetAtt": LambdaDlq.Arn
+                      - PolicyName: DynamoDBAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "dynamodb:GetItem"
+                                - "dynamodb:PutItem"
+                                - "dynamodb:Query"
+                              Resource:
+                                - "Fn::GetAtt": IssueTable.Arn
+                      - PolicyName: DynamoDBStreamAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "dynamodb:DescribeStream"
+                                - "dynamodb:GetRecords"
+                                - "dynamodb:GetShardIterator"
+                                - "dynamodb:ListStreams"
+                              Resource:
+                                - "Fn::GetAtt": IssueTable.StreamArn
+                      - PolicyName: CloudWatchLogsAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "logs:*"
+                              Resource: "arn:aws:logs:*:*:*"
+                  comparison:
+                    - Exists
+                    - true
+        - Clause:
+            Unary:
+              context: " Policies not EXISTS  "
+              messages:
+                custom_message: Inline policies found with IAM role
+                error_message: "Check was not compliant as property [/Resources/FixCodeFunctionRole/Properties/Policies[L:253,C:8]] existed."
+              check:
+                Resolved:
+                  value:
+                    path: /Resources/FixCodeFunctionRole/Properties/Policies
+                    value:
+                      - PolicyName: SSMParameterAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "ssm:GetParameter"
+                                - "ssm:GetParameters"
+                              Resource:
+                                - "Fn::Sub": "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter${ParameterStorePrefix}*"
+                      - PolicyName: BedRockAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "bedrock:InvokeModel"
+                              Resource: "arn:aws:bedrock:*::foundation-model/*"
+                      - PolicyName: KMSKeyAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "kms:Encrypt"
+                                - "kms:Decrypt"
+                              Resource:
+                                "Fn::GetAtt": KmsKey.Arn
+                      - PolicyName: SQSAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "sqs:ReceiveMessage"
+                                - "sqs:DeleteMessage"
+                                - "sqs:GetQueueAttributes"
+                              Resource:
+                                - "Fn::GetAtt": WorkerQueue.Arn
+                      - PolicyName: DLQAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "sqs:SendMessage"
+                                - "sqs:GetQueueAttributes"
+                              Resource:
+                                - "Fn::GetAtt": LambdaDlq.Arn
+                      - PolicyName: CloudWatchLogsAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "logs:*"
+                              Resource: "arn:aws:logs:*:*:*"
+                  comparison:
+                    - Exists
+                    - true
+        - Clause:
+            Unary:
+              context: " Policies not EXISTS  "
+              messages:
+                custom_message: Inline policies found with IAM role
+                error_message: "Check was not compliant as property [/Resources/DetectErrorFunctionRole/Properties/Policies[L:366,C:8]] existed."
+              check:
+                Resolved:
+                  value:
+                    path: /Resources/DetectErrorFunctionRole/Properties/Policies
+                    value:
+                      - PolicyName: KMSKeyAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "kms:Encrypt"
+                                - "kms:Decrypt"
+                              Resource:
+                                "Fn::GetAtt": KmsKey.Arn
+                      - PolicyName: DDBAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "dynamodb:UpdateItem"
+                              Resource:
+                                "Fn::GetAtt": IssueTable.Arn
+                      - PolicyName: DLQAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "sqs:SendMessage"
+                                - "sqs:GetQueueAttributes"
+                              Resource:
+                                - "Fn::GetAtt": LambdaDlq.Arn
+                      - PolicyName: CloudWatchLogsAccess
+                        PolicyDocument:
+                          Version: 2012-10-17
+                          Statement:
+                            - Effect: Allow
+                              Action:
+                                - "logs:*"
+                              Resource: "arn:aws:logs:*:*:*"
+                  comparison:
+                    - Exists
+                    - true
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-sensitive-iam.guard/aws_iam_role_no_sensitive_access    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_no_sensitive_access
+Parsing error handling rule file = role-no-unrestricted-assume-role.guard, Error = Parser Error when parsing Parsing Error Error parsing file role-no-unrestricted-assume-role.guard at line 12 at column 50, when handling , fragment %sts_restricted_actions
+                            some Resource[*] == "*"
+                        ] empty <<IAM role found with a policy that allows unrestricted sts:AssumeRole>>
+                    }
+                }
+            }
+        }
+    }
+}
+
+---
+Parsing error handling rule file = role-no-unrestricted-lambda-invoke.guard, Error = Parser Error when parsing Parsing Error Error parsing file role-no-unrestricted-lambda-invoke.guard at line 12 at column 50, when handling , fragment %lambda_restricted_actions
+                            some Resource[*] == "*"
+                        ] empty <<IAM role found with a policy that allows unrestricted Lambda Invoke Function to all functions>>
+                    }
+                }
+            }
+        }
+    }
+}
+
+---
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-unrestricted-pass-role.guard/aws_iam_role_unrestriced_pass_role    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_unrestriced_pass_role
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-unrestricted-s3-full.guard/aws_iam_role_s3_full_access    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_s3_full_access
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-unrestricted-s3-read.guard/aws_iam_role_s3_read_access    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_s3_read_access
+Other
+template.yaml Status = PASS
+PASS rules
+role-no-unrestricted-secretsmanager.guard/aws_iam_role_unrestricted_secretsmanager    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_iam_role_unrestricted_secretsmanager
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-direct-attached-policy.guard/aws_iam_user_attached_policies    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_attached_policies
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-sensitive-iam.guard/aws_iam_user_no_sensitive_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_no_sensitive_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-assume-role.guard/aws_iam_user_no_unrestricted_assume_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_no_unrestricted_assume_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-lambda-invoke.guard/aws_iam_user_unrestricted_lambda_invoke    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_unrestricted_lambda_invoke
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-pass-role.guard/aws_iam_user_unrestriced_pass_role    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_unrestriced_pass_role
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-s3-full.guard/aws_iam_user_s3_full_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_s3_full_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-s3-read.guard/aws_iam_user_s3_read_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_s3_read_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+user-no-unrestricted-secretsmanager.guard/aws_iam_user_unrestricted_secretsmanager    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_iam_user_unrestricted_secretsmanager
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+key-has-policy.guard/aws_kms_key_has_policy    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_kms_key_has_policy
+Other
+template.yaml Status = PASS
+PASS rules
+key-policy-no-not-action.guard/aws_kms_key_policy_not_action_used    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_kms_key_policy_not_action_used
+Other
+template.yaml Status = FAIL
+FAILED rules
+key-policy-no-wildcard-action.guard/aws_kms_key_policy_action_does_not_have_wildcards    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_kms_key_policy_action_does_not_have_wildcards
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Unary:
+              context: " %open_kms_key_resource_policy EMPTY  "
+              messages:
+                custom_message: " KMS Key - Wildcard action assigned to unauthorised principal "
+                error_message: "Check was not compliant as property [/Resources/KmsKey/Properties/KeyPolicy/Statement/0[L:38,C:18]] was not empty."
+              check:
+                Resolved:
+                  value:
+                    path: /Resources/KmsKey/Properties/KeyPolicy/Statement/0
+                    value:
+                      Effect: Allow
+                      Principal:
+                        AWS:
+                          "Fn::Sub": "arn:aws:iam::${AWS::AccountId}:root"
+                      Action:
+                        - "kms:*"
+                      Resource: "*"
+                  comparison:
+                    - Empty
+                    - false
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = FAIL
+FAILED rules
+key-policy-no-wildcard-principal.guard/aws_kms_key_policy_principal_does_not_have_wildcards    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_kms_key_policy_principal_does_not_have_wildcards
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Disjunctions:
+            checks:
+              - Clause:
+                  Binary:
+                    context: " AWS[*] not EQUALS  \"*\""
+                    messages:
+                      custom_message: ""
+                      error_message: "Check was not compliant as property value [Path=/Resources/KmsKey/Properties/KeyPolicy/Statement/0/Principal/AWS[L:40,C:24] Value={\"Fn::Sub\":\"arn:aws:iam::${AWS::AccountId}:root\"}] equal to value [Path=[L:0,C:0] Value=\"*\"]. Error = [PathAwareValues are not comparable map, String]"
+                    check:
+                      Resolved:
+                        from:
+                          path: /Resources/KmsKey/Properties/KeyPolicy/Statement/0/Principal/AWS
+                          value:
+                            "Fn::Sub": "arn:aws:iam::${AWS::AccountId}:root"
+                        to:
+                          path: ""
+                          value: "*"
+                        comparison:
+                          - Eq
+                          - true
+              - Clause:
+                  Binary:
+                    context: " Service[*] not EQUALS  \"*\""
+                    messages:
+                      custom_message: KMS Key - Use least privilege for principal instead of a wildcard
+                      error_message: "Check was not compliant as property [Service[*]] to compare from is missing. Value traversed to [Path=/Resources/KmsKey/Properties/KeyPolicy/Statement/0/Principal[L:40,C:17] Value={\"AWS\":{\"Fn::Sub\":\"arn:aws:iam::${AWS::AccountId}:root\"}}]."
+                    check:
+                      UnResolved:
+                        value:
+                          traversed_to:
+                            path: /Resources/KmsKey/Properties/KeyPolicy/Statement/0/Principal
+                            value:
+                              AWS:
+                                "Fn::Sub": "arn:aws:iam::${AWS::AccountId}:root"
+                          remaining_query: "Service[*]"
+                          reason: "Could not find key Service inside struct at path /Resources/KmsKey/Properties/KeyPolicy/Statement/0/Principal[L:40,C:17]"
+                        comparison:
+                          - Eq
+                          - true
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+key-rotation-enabled.guard/aws_kms_key_rotation_must_be_enabled    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_kms_key_rotation_must_be_enabled
+Other
+template.yaml Status = PASS
+PASS rules
+function-deprecated-runtime.guard/aws_lambda_function_must_not_use_deprecated_runtime    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_lambda_function_must_not_use_deprecated_runtime
+Other
+template.yaml Status = PASS
+PASS rules
+function-environment-encrypted.guard/aws_lambda_function_env_vars_must_be_encrypted    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_lambda_function_env_vars_must_be_encrypted
+Other
+template.yaml Status = FAIL
+FAILED rules
+function-in-vpc.guard/aws_lambda_function_should_be_launched_in_vpc    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_lambda_function_should_be_launched_in_vpc
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Unary:
+              context: " VpcConfig EXISTS  "
+              messages:
+                custom_message: Lambda Function - should be launched in a VPC
+                error_message: "Check was not compliant as property [VpcConfig] is missing. Value traversed to [Path=/Resources/TriageFunction/Properties[L:211,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/triage.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"TriageFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"WORKER_QUEUE_URL\":{\"Ref\":\"WorkerQueue\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/TriageFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/triage.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": TriageFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            WORKER_QUEUE_URL:
+                              Ref: WorkerQueue
+                    remaining_query: VpcConfig
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/TriageFunction/Properties[L:211,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SecurityGroupIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify Security Groups
+                error_message: "Check was not compliant as property [VpcConfig.SecurityGroupIds] is missing. Value traversed to [Path=/Resources/TriageFunction/Properties[L:211,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/triage.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"TriageFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"WORKER_QUEUE_URL\":{\"Ref\":\"WorkerQueue\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/TriageFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/triage.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": TriageFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            WORKER_QUEUE_URL:
+                              Ref: WorkerQueue
+                    remaining_query: VpcConfig.SecurityGroupIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/TriageFunction/Properties[L:211,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SubnetIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify SubnetIDs
+                error_message: "Check was not compliant as property [VpcConfig.SubnetIds] is missing. Value traversed to [Path=/Resources/TriageFunction/Properties[L:211,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/triage.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"TriageFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"WORKER_QUEUE_URL\":{\"Ref\":\"WorkerQueue\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/TriageFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/triage.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": TriageFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            WORKER_QUEUE_URL:
+                              Ref: WorkerQueue
+                    remaining_query: VpcConfig.SubnetIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/TriageFunction/Properties[L:211,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig EXISTS  "
+              messages:
+                custom_message: Lambda Function - should be launched in a VPC
+                error_message: "Check was not compliant as property [VpcConfig] is missing. Value traversed to [Path=/Resources/FixCodeFunction/Properties[L:322,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/fix_code.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Layers\":[{\"Fn::Sub\":\"arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14\"}],\"Role\":{\"Fn::GetAtt\":\"FixCodeFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"PARAMETER_STORE_PREFIX\":{\"Ref\":\"ParameterStorePrefix\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/FixCodeFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/fix_code.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Layers:
+                          - "Fn::Sub": "arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14"
+                        Role:
+                          "Fn::GetAtt": FixCodeFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            PARAMETER_STORE_PREFIX:
+                              Ref: ParameterStorePrefix
+                    remaining_query: VpcConfig
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/FixCodeFunction/Properties[L:322,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SecurityGroupIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify Security Groups
+                error_message: "Check was not compliant as property [VpcConfig.SecurityGroupIds] is missing. Value traversed to [Path=/Resources/FixCodeFunction/Properties[L:322,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/fix_code.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Layers\":[{\"Fn::Sub\":\"arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14\"}],\"Role\":{\"Fn::GetAtt\":\"FixCodeFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"PARAMETER_STORE_PREFIX\":{\"Ref\":\"ParameterStorePrefix\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/FixCodeFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/fix_code.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Layers:
+                          - "Fn::Sub": "arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14"
+                        Role:
+                          "Fn::GetAtt": FixCodeFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            PARAMETER_STORE_PREFIX:
+                              Ref: ParameterStorePrefix
+                    remaining_query: VpcConfig.SecurityGroupIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/FixCodeFunction/Properties[L:322,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SubnetIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify SubnetIDs
+                error_message: "Check was not compliant as property [VpcConfig.SubnetIds] is missing. Value traversed to [Path=/Resources/FixCodeFunction/Properties[L:322,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/fix_code.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Layers\":[{\"Fn::Sub\":\"arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14\"}],\"Role\":{\"Fn::GetAtt\":\"FixCodeFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"PARAMETER_STORE_PREFIX\":{\"Ref\":\"ParameterStorePrefix\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/FixCodeFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/fix_code.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Layers:
+                          - "Fn::Sub": "arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14"
+                        Role:
+                          "Fn::GetAtt": FixCodeFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            PARAMETER_STORE_PREFIX:
+                              Ref: ParameterStorePrefix
+                    remaining_query: VpcConfig.SubnetIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/FixCodeFunction/Properties[L:322,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig EXISTS  "
+              messages:
+                custom_message: Lambda Function - should be launched in a VPC
+                error_message: "Check was not compliant as property [VpcConfig] is missing. Value traversed to [Path=/Resources/DetectErrorFunction/Properties[L:414,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/detect_error.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"DetectErrorFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"ISSUE_TABLE\":{\"Ref\":\"IssueTable\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/DetectErrorFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/detect_error.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": DetectErrorFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            ISSUE_TABLE:
+                              Ref: IssueTable
+                    remaining_query: VpcConfig
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/DetectErrorFunction/Properties[L:414,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SecurityGroupIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify Security Groups
+                error_message: "Check was not compliant as property [VpcConfig.SecurityGroupIds] is missing. Value traversed to [Path=/Resources/DetectErrorFunction/Properties[L:414,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/detect_error.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"DetectErrorFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"ISSUE_TABLE\":{\"Ref\":\"IssueTable\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/DetectErrorFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/detect_error.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": DetectErrorFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            ISSUE_TABLE:
+                              Ref: IssueTable
+                    remaining_query: VpcConfig.SecurityGroupIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/DetectErrorFunction/Properties[L:414,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " VpcConfig.SubnetIds EXISTS  "
+              messages:
+                custom_message: Lambda Function - VPC configuration should specify SubnetIDs
+                error_message: "Check was not compliant as property [VpcConfig.SubnetIds] is missing. Value traversed to [Path=/Resources/DetectErrorFunction/Properties[L:414,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/detect_error.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"DetectErrorFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"ISSUE_TABLE\":{\"Ref\":\"IssueTable\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/DetectErrorFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/detect_error.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": DetectErrorFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            ISSUE_TABLE:
+                              Ref: IssueTable
+                    remaining_query: VpcConfig.SubnetIds
+                    reason: "Could not find key VpcConfig inside struct at path /Resources/DetectErrorFunction/Properties[L:414,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+function-no-shared-iam-roles.guard/aws_lambda_function_no_shared_iam_roles    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_lambda_function_no_shared_iam_roles
+compliant: []
+Other
+template.yaml Status = FAIL
+FAILED rules
+function-sensitive-data-env-var.guard/aws_lambda_function_sensitive_data_env_var    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_lambda_function_sensitive_data_env_var
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Binary:
+              context: " Environment.Variables.* not EQUALS  \"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\""
+              messages:
+                custom_message: "Lambda Function - Potential access key ID in environment variable values "
+                error_message: "Check was not compliant as property value [Path=/Resources/TriageFunction/Properties/Environment/Variables/WORKER_QUEUE_URL[L:224,C:33] Value={\"Ref\":\"WorkerQueue\"}] equal to value [Path=[L:0,C:0] Value=\"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\"]. Error = [PathAwareValues are not comparable map, Regex]"
+              check:
+                Resolved:
+                  from:
+                    path: /Resources/TriageFunction/Properties/Environment/Variables/WORKER_QUEUE_URL
+                    value:
+                      Ref: WorkerQueue
+                  to:
+                    path: ""
+                    value: "/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/"
+                  comparison:
+                    - Eq
+                    - true
+        - Clause:
+            Binary:
+              context: " Environment.Variables.* not EQUALS  \"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\""
+              messages:
+                custom_message: "Lambda Function - Potential access key ID in environment variable values "
+                error_message: "Check was not compliant as property value [Path=/Resources/FixCodeFunction/Properties/Environment/Variables/PARAMETER_STORE_PREFIX[L:337,C:39] Value={\"Ref\":\"ParameterStorePrefix\"}] equal to value [Path=[L:0,C:0] Value=\"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\"]. Error = [PathAwareValues are not comparable map, Regex]"
+              check:
+                Resolved:
+                  from:
+                    path: /Resources/FixCodeFunction/Properties/Environment/Variables/PARAMETER_STORE_PREFIX
+                    value:
+                      Ref: ParameterStorePrefix
+                  to:
+                    path: ""
+                    value: "/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/"
+                  comparison:
+                    - Eq
+                    - true
+        - Clause:
+            Binary:
+              context: " Environment.Variables.* not EQUALS  \"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\""
+              messages:
+                custom_message: "Lambda Function - Potential access key ID in environment variable values "
+                error_message: "Check was not compliant as property value [Path=/Resources/DetectErrorFunction/Properties/Environment/Variables/ISSUE_TABLE[L:427,C:28] Value={\"Ref\":\"IssueTable\"}] equal to value [Path=[L:0,C:0] Value=\"/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/\"]. Error = [PathAwareValues are not comparable map, Regex]"
+              check:
+                Resolved:
+                  from:
+                    path: /Resources/DetectErrorFunction/Properties/Environment/Variables/ISSUE_TABLE
+                    value:
+                      Ref: IssueTable
+                  to:
+                    path: ""
+                    value: "/(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/"
+                  comparison:
+                    - Eq
+                    - true
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = FAIL
+FAILED rules
+function-tracing-enabled.guard/aws_lambda_function_should_have_tracing_configured    FAIL
+---
+---
+name: ""
+metadata: {}
+status: FAIL
+not_compliant:
+  - Rule:
+      name: aws_lambda_function_should_have_tracing_configured
+      metadata: {}
+      messages:
+        custom_message: ~
+        error_message: ~
+      checks:
+        - Clause:
+            Unary:
+              context: " TracingConfig.Mode EXISTS  "
+              messages:
+                custom_message: Lambda Function - should have a tracing configuration
+                error_message: "Check was not compliant as property [TracingConfig.Mode] is missing. Value traversed to [Path=/Resources/TriageFunction/Properties[L:211,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/triage.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"TriageFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"WORKER_QUEUE_URL\":{\"Ref\":\"WorkerQueue\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/TriageFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/triage.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": TriageFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            WORKER_QUEUE_URL:
+                              Ref: WorkerQueue
+                    remaining_query: TracingConfig.Mode
+                    reason: "Could not find key TracingConfig inside struct at path /Resources/TriageFunction/Properties[L:211,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " TracingConfig.Mode EXISTS  "
+              messages:
+                custom_message: Lambda Function - should have a tracing configuration
+                error_message: "Check was not compliant as property [TracingConfig.Mode] is missing. Value traversed to [Path=/Resources/FixCodeFunction/Properties[L:322,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/fix_code.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Layers\":[{\"Fn::Sub\":\"arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14\"}],\"Role\":{\"Fn::GetAtt\":\"FixCodeFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"PARAMETER_STORE_PREFIX\":{\"Ref\":\"ParameterStorePrefix\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/FixCodeFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/fix_code.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Layers:
+                          - "Fn::Sub": "arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14"
+                        Role:
+                          "Fn::GetAtt": FixCodeFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            PARAMETER_STORE_PREFIX:
+                              Ref: ParameterStorePrefix
+                    remaining_query: TracingConfig.Mode
+                    reason: "Could not find key TracingConfig inside struct at path /Resources/FixCodeFunction/Properties[L:322,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+        - Clause:
+            Unary:
+              context: " TracingConfig.Mode EXISTS  "
+              messages:
+                custom_message: Lambda Function - should have a tracing configuration
+                error_message: "Check was not compliant as property [TracingConfig.Mode] is missing. Value traversed to [Path=/Resources/DetectErrorFunction/Properties[L:414,C:13] Value={\"Runtime\":\"python3.9\",\"Timeout\":900,\"Code\":\"package/\",\"Handler\":\"handlers/detect_error.handler\",\"ReservedConcurrentExecutions\":10,\"DeadLetterConfig\":{\"TargetArn\":{\"Fn::GetAtt\":\"LambdaDlq.Arn\"}},\"KmsKeyArn\":{\"Fn::GetAtt\":\"KmsKey.Arn\"},\"Role\":{\"Fn::GetAtt\":\"DetectErrorFunctionRole.Arn\"},\"Environment\":{\"Variables\":{\"ISSUE_TABLE\":{\"Ref\":\"IssueTable\"}}}}]."
+              check:
+                UnResolved:
+                  value:
+                    traversed_to:
+                      path: /Resources/DetectErrorFunction/Properties
+                      value:
+                        Runtime: python3.9
+                        Timeout: 900
+                        Code: package/
+                        Handler: handlers/detect_error.handler
+                        ReservedConcurrentExecutions: 10
+                        DeadLetterConfig:
+                          TargetArn:
+                            "Fn::GetAtt": LambdaDlq.Arn
+                        KmsKeyArn:
+                          "Fn::GetAtt": KmsKey.Arn
+                        Role:
+                          "Fn::GetAtt": DetectErrorFunctionRole.Arn
+                        Environment:
+                          Variables:
+                            ISSUE_TABLE:
+                              Ref: IssueTable
+                    remaining_query: TracingConfig.Mode
+                    reason: "Could not find key TracingConfig inside struct at path /Resources/DetectErrorFunction/Properties[L:414,C:13]"
+                  comparison:
+                    - Exists
+                    - false
+not_applicable: []
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+log-group-encrypted.guard/aws_log_group_customer_managed_cmk    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_log_group_customer_managed_cmk
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+log-group-retention-period.guard/aws_log_group_minimum_retention_period    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_log_group_minimum_retention_period
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-broker-logs-enabled.guard/aws_msk_broker_logs_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_msk_broker_logs_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-broker-to-broker-encryption-enabled.guard/aws_msk_broker_to_broker_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_msk_broker_to_broker_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-client-to-broker-encryption-enabled.guard/aws_msk_cluster_client_to_broker_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_msk_cluster_client_to_broker_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-iam-auth.guard/aws_msk_iam_authentication    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_msk_iam_authentication
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-audit-logging.guard/aws_neptune_dbcluster_audit_logs_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_audit_logs_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-backup-retention-configured.guard/aws_neptune_dbcluster_backup_retention_configured    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_backup_retention_configured
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-deletion-protection-enabled.guard/aws_neptune_dbcluster_deletion_protection_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_deletion_protection_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-encryption-at-rest.guard/aws_neptune_dbcluster_encryption_at_rest    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_encryption_at_rest
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-iam-auth.guard/aws_neptune_dbcluster_iam_auth_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_iam_auth_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+dbcluster-multi-az-enabled.guard/aws_neptune_dbcluster_multi_az_configured    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_neptune_dbcluster_multi_az_configured
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+firewall-deletion-protection.guard/aws_networkfirewall_firewall_deletion_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_networkfirewall_firewall_deletion_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+firewall-subnet-change-protection.guard/aws_networkfirewall_firewall_subnet_change_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_networkfirewall_firewall_subnet_change_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-encrypted-at-rest.guard/aws_opensearch_domain_encrypted_storage    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_encrypted_storage
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-has-dedicated-master.guard/aws_opensearch_domain_dedicated_master    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_dedicated_master
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-in-vpc.guard/aws_opensearch_domain_in_vpc    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_in_vpc
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-logs-enabled.guard/aws_opensearch_domain_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-node-encryption.guard/aws_opensearch_domain_encrypted_intransit    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_encrypted_intransit
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-require-https.guard/aws_opensearch_domain_require_https    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_require_https
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+domain-zone-awareness.guard/aws_opensearch_domain_zone_awareness    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_opensearch_domain_zone_awareness
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-allow-upgrades.guard/aws_redshift_cluster_allow_upgrades    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_allow_upgrades
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-audit-logging-enabled.guard/aws_redshift_cluster_audit_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_audit_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-backup-enabled.guard/aws_redshift_cluster_backup_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_backup_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-encryption-enabled.guard/aws_redshift_cluster_encryption_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_encryption_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-encryption-kms-enabled.guard/aws_redshift_cluster_encryption_kms_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_encryption_kms_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-enhanced-vpc-routing.guard/aws_redshift_cluster_enhanced_vpc_routing_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_enhanced_vpc_routing_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-in-vpc.guard/aws_redshift_cluster_in_vpc    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_in_vpc
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-maintenance-configured.guard/aws_redshift_cluster_maintenance_configured    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_maintenance_configured
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-no-public-access.guard/aws_redshift_cluster_no_public_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_no_public_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+cluster-non-default-port.guard/aws_redshift_cluster_non_default_port    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_redshift_cluster_non_default_port
+compliant: []
+Parsing error handling rule file = cluster-non-default-username.guard, Error = Parser Error when parsing Parsing Error Error parsing file cluster-non-default-username.guard at line 10 at column 2, when handling , fragment 
+
+---
+Other
+template.yaml Status = SKIP
+SKIP rules
+hosted-zone-logging-enabled.guard/aws_route53_hosted_zone_cloudwatch_logging_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_route53_hosted_zone_cloudwatch_logging_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+resolver-firewall-mutation-protection.guard/aws_route53_firewall_rule_group_association_mutation_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_route53_firewall_rule_group_association_mutation_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+bucket-access-logging-enabled.guard/aws_s3_bucket_access_logging    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_s3_bucket_access_logging
+compliant: []
+Parsing error handling rule file = bucket-has-block-public-config.guard, Error = Parser Error when parsing Parsing Error Error parsing file bucket-has-block-public-config.guard at line 38 at column 6, when handling , fragment 
+
+---
+Other
+template.yaml Status = SKIP
+SKIP rules
+bucket-has-deletion-protection.guard/aws_s3_bucket_deletion_protection    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_s3_bucket_deletion_protection
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+bucket-requires-tls.guard/aws_s3_bucket_with_tls_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_s3_bucket_with_tls_policy
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+bucket-uses-cmk.guard/aws_s3_bucket_sse_customer_managed_cmk    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_s3_bucket_sse_customer_managed_cmk
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+bucket-versioning-enabled.guard/aws_s3_bucket_versioning    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_s3_bucket_versioning
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+endpoint-encrypted.guard/aws_sagemaker_endpoint_configuration_encryption_at_rest_enabled    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_endpoint_configuration_encryption_at_rest_enabled
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+model-in-vpc.guard/aws_sagemaker_model_vpc_settings    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_model_vpc_settings
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+model-network-isolation.guard/aws_sagemaker_model_network_isolation    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_model_network_isolation
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+notebook-instance-in-vpc.guard/aws_sagemaker_instance_vpc_configured    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_instance_vpc_configured
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+notebook-instance-no-direct-internet.guard/aws_sagemaker_instance_direct_internet_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_instance_direct_internet_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+notebook-instance-root-access-disabled.guard/aws_sagemaker_instance_root_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_instance_root_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+notebook-instance-storage-encrypted.guard/aws_sagemaker_instance_storage_encryption    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sagemaker_instance_storage_encryption
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+resource-policy-block-public-access.guard/aws_secretsmanager_resource_policy_block_public_access    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_secretsmanager_resource_policy_block_public_access
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+secret-cross-region-replication.guard/aws_secretsmanager_secret_cross_region_replication    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_secretsmanager_secret_cross_region_replication
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+secret-has-rotation-schedule.guard/aws_secretsmanager_secret_has_rotation_schedule    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_secretsmanager_secret_has_rotation_schedule
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+secret-no-hardcoded.guard/aws_secretsmanager_secret_no_hardcoded_secrets    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_secretsmanager_secret_no_hardcoded_secrets
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+secret-uses-cmk.guard/aws_secretsmanager_secret_encrypted_kms_cmk    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_secretsmanager_secret_encrypted_kms_cmk
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+subscription-protocol-allowlist.guard/aws_sns_subscription_protocol_allowlist    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_subscription_protocol_allowlist
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+topic-policy-no-notaction.guard/aws_sns_topic_policy_not_action_used    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_topic_policy_not_action_used
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+topic-policy-no-wildcard-action.guard/aws_sns_topic_policy_does_not_have_wildcard_actions    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_topic_policy_does_not_have_wildcard_actions
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+topic-policy-no-wildcard-principal.guard/aws_sns_topic_policy_principal_does_not_have_wildcards    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_topic_policy_principal_does_not_have_wildcards
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+topic-uses-kms.guard/aws_sns_topics_must_be_encrypted_using_kms    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_topics_must_be_encrypted_using_kms
+compliant: []
+Other
+template.yaml Status = SKIP
+SKIP rules
+topic-uses-tls.guard/aws_sns_topic_with_tls_policy    SKIP
+---
+---
+name: ""
+metadata: {}
+status: SKIP
+not_compliant: []
+not_applicable:
+  - aws_sns_topic_with_tls_policy
+compliant: []
+Other
+template.yaml Status = PASS
+PASS rules
+queue-policy-no-notaction.guard/aws_sqs_queue_policy_not_action_used    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_sqs_queue_policy_not_action_used
+Other
+template.yaml Status = PASS
+PASS rules
+queue-policy-no-wildcard-action.guard/aws_sqs_queue_policy_does_not_have_wildcard_actions    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_sqs_queue_policy_does_not_have_wildcard_actions
+Other
+template.yaml Status = PASS
+PASS rules
+queue-policy-no-wildcard-principal.guard/aws_sqs_queue_policy_principal_does_not_have_wildcards    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_sqs_queue_policy_principal_does_not_have_wildcards
+Other
+template.yaml Status = PASS
+PASS rules
+webacl-no-classic-acls.guard/aws_waf_webacl_no_classic_acls    PASS
+---
+---
+name: ""
+metadata: {}
+status: PASS
+not_compliant: []
+not_applicable: []
+compliant:
+  - aws_waf_webacl_no_classic_acls

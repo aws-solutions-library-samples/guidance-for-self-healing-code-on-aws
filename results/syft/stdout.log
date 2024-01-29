@@ -1,0 +1,1153 @@
+{
+ "artifacts": [
+  {
+   "id": "943529ee072399fc",
+   "name": "GitPython",
+   "version": "3.1.37",
+   "type": "python",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:GitPython:3.1.37:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:GitPython:3.1.37:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/GitPython@3.1.37",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "GitPython",
+    "versionConstraint": "==3.1.37"
+   }
+  },
+  {
+   "id": "b8f870e6e486236f",
+   "name": "GitPython",
+   "version": "3.1.41",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-GitPython:python-GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:python_GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python-GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:python_GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python-GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:python_GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-GitPython:GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_GitPython:GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:GitPython:GitPython:3.1.41:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:GitPython:3.1.41:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/GitPython@3.1.41",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "GitPython",
+    "versionConstraint": "==3.1.41"
+   }
+  },
+  {
+   "id": "798ac21253623dac",
+   "name": "awscli",
+   "version": "1.32.29",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-awscli:python-awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-awscli:python_awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_awscli:python-awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_awscli:python_awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:awscli:python-awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:awscli:python_awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-awscli:awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_awscli:awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:awscli:awscli:1.32.29:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:awscli:1.32.29:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/awscli@1.32.29",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "awscli",
+    "versionConstraint": "==1.32.29"
+   }
+  },
+  {
+   "id": "f205a9b2a5afa8fa",
+   "name": "black",
+   "version": "23.1.0",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-black:python-black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-black:python_black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_black:python-black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_black:python_black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:black:python-black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:black:python_black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-black:black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_black:black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:black:23.1.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:black:black:23.1.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/black@23.1.0",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "black",
+    "versionConstraint": "==23.1.0"
+   }
+  },
+  {
+   "id": "67971c1aca2550e8",
+   "name": "boto3",
+   "version": "1.33.8",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-boto3:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:boto3:1.33.8:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/boto3@1.33.8",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "boto3",
+    "versionConstraint": "==1.33.8"
+   }
+  },
+  {
+   "id": "505a1d404c72de57",
+   "name": "boto3",
+   "version": "1.33.8",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:python-boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:python_boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-boto3:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_boto3:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:boto3:1.33.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:boto3:boto3:1.33.8:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/boto3@1.33.8",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "boto3",
+    "versionConstraint": "==1.33.8"
+   }
+  },
+  {
+   "id": "20acfdc492414274",
+   "name": "langchain",
+   "version": "0.0.333",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-langchain:python-langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-langchain:python_langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_langchain:python-langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_langchain:python_langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:langchain:python-langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:langchain:python_langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-langchain:langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_langchain:langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:langchain:langchain:0.0.333:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:langchain:0.0.333:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/langchain@0.0.333",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "langchain",
+    "versionConstraint": "==0.0.333"
+   }
+  },
+  {
+   "id": "75bc616cb9d9a054",
+   "name": "openai",
+   "version": "0.27.8",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-openai:python-openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-openai:python_openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_openai:python-openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_openai:python_openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:openai:python-openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:openai:python_openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-openai:openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_openai:openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:openai:openai:0.27.8:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:openai:0.27.8:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/openai@0.27.8",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "openai",
+    "versionConstraint": "==0.27.8"
+   }
+  },
+  {
+   "id": "e8aabfe71e23d6e9",
+   "name": "requests",
+   "version": "2.31.0",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/src/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-requests:python-requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-requests:python_requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_requests:python-requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_requests:python_requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-requests:requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_requests:requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:requests:python-requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:requests:python_requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:requests:requests:2.31.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:requests:2.31.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/requests@2.31.0",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "requests",
+    "versionConstraint": "==2.31.0"
+   }
+  },
+  {
+   "id": "5cf928db6a084fe1",
+   "name": "virtualenv",
+   "version": "20.25.0",
+   "type": "python",
+   "foundBy": "python-index-cataloger",
+   "locations": [
+    {
+     "path": "/requirements.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    },
+    {
+     "path": "/results/syft/sbom",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "python",
+   "cpes": [
+    "cpe:2.3:a:python-virtualenv:python-virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-virtualenv:python_virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_virtualenv:python-virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_virtualenv:python_virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python-virtualenv:virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python_virtualenv:virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:virtualenv:python-virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:virtualenv:python_virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python-virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:python_virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:virtualenv:virtualenv:20.25.0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:python:virtualenv:20.25.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:pypi/virtualenv@20.25.0",
+   "metadataType": "PythonRequirementsMetadata",
+   "metadata": {
+    "name": "virtualenv",
+    "versionConstraint": "==20.25.0"
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "20acfdc492414274",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "20acfdc492414274",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "505a1d404c72de57",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "20acfdc492414274",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "20acfdc492414274",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "20acfdc492414274",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "20acfdc492414274",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "505a1d404c72de57",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "505a1d404c72de57",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "505a1d404c72de57",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "505a1d404c72de57",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "5cf928db6a084fe1",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "5cf928db6a084fe1",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "5cf928db6a084fe1",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "5cf928db6a084fe1",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "67971c1aca2550e8",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "67971c1aca2550e8",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "67971c1aca2550e8",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "67971c1aca2550e8",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "75bc616cb9d9a054",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "75bc616cb9d9a054",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "75bc616cb9d9a054",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "75bc616cb9d9a054",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "798ac21253623dac",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "798ac21253623dac",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "798ac21253623dac",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "798ac21253623dac",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "943529ee072399fc",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "943529ee072399fc",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "943529ee072399fc",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "943529ee072399fc",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "b8f870e6e486236f",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "b8f870e6e486236f",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "b8f870e6e486236f",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "e8aabfe71e23d6e9",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "e8aabfe71e23d6e9",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "e8aabfe71e23d6e9",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "e8aabfe71e23d6e9",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "f205a9b2a5afa8fa",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "f205a9b2a5afa8fa",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "f205a9b2a5afa8fa",
+   "type": "contains"
+  },
+  {
+   "parent": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+   "child": "f205a9b2a5afa8fa",
+   "type": "contains"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5cf928db6a084fe1",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "67971c1aca2550e8",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "75bc616cb9d9a054",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "26ca2b7dc025d550",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "798ac21253623dac",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "943529ee072399fc",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "943529ee072399fc",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "943529ee072399fc",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "943529ee072399fc",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "943529ee072399fc",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b8f870e6e486236f",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e8aabfe71e23d6e9",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "5104e3c9f827628a",
+   "type": "described-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "5104e3c9f827628a",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f205a9b2a5afa8fa",
+   "child": "f7eefbcc05c37bd9",
+   "type": "evident-by"
+  }
+ ],
+ "files": [
+  {
+   "id": "26ca2b7dc025d550",
+   "location": {
+    "path": "/requirements.txt"
+   }
+  },
+  {
+   "id": "5104e3c9f827628a",
+   "location": {
+    "path": "/results/syft/sbom"
+   }
+  },
+  {
+   "id": "f7eefbcc05c37bd9",
+   "location": {
+    "path": "/src/requirements.txt"
+   }
+  }
+ ],
+ "source": {
+  "id": "56c9e1c4b5360a5b089004396ed37fe3a20f7c4f5954072098039789ba3ab68a",
+  "name": "/src",
+  "version": "",
+  "type": "directory",
+  "metadata": {
+   "path": "/src"
+  }
+ },
+ "distro": {},
+ "descriptor": {
+  "name": "syft",
+  "version": "0.93.0",
+  "configuration": {
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "python": {
+    "guess-unpinned-requirements": false
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": null
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": null,
+    "exclude-pattern-names": null,
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": "",
+   "exclude-binary-overlap-by-ownership": true
+  }
+ },
+ "schema": {
+  "version": "11.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-11.0.0.json"
+ }
+}

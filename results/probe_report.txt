@@ -1,0 +1,21 @@
+
+        Probe Findings
+
+        Jobs run: grype
+        Total findings: 1
+
+        ======================
+
+        
+            Finding date:  2024-01-30 14:43:54.296297
+            Job name: grype
+            Severity: ERROR
+            Filename: Dependency: GitPython Version: 3.1.37 (python),
+            Line: 0,
+            Message: GHSA-2mqj-m65w-jghx - Untrusted search path under some conditions on Windows allows arbitrary code execution
+More information is available from these links:
+https://github.com/advisories/GHSA-2mqj-m65w-jghx
+
+            -----
+
+            

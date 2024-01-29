@@ -5,6 +5,7 @@
 # Build
 *.zip
 .aws-sam/
+.build/
 samconfig.toml
 
 # Mac/OSX
