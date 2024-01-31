@@ -12,7 +12,7 @@ Parameters:
 
 Resources:
   KmsKey:
-    Type: "AWS::KMS::Key"
+    Type: AWS::KMS::Key
     Metadata:
       cfn_guard:
         rules_to_suppress:
@@ -96,7 +96,7 @@ Resources:
       KmsMasterKeyId: !Ref KmsKey
 
   QueuePolicy:
-    Type: "AWS::SQS::QueuePolicy"
+    Type: AWS::SQS::QueuePolicy
     Properties:
       Queues:
         - !Ref LambdaDlq
