@@ -202,7 +202,7 @@ Resources:
           - id: W89
             reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
     Properties:
-      Runtime: python3.9
+      Runtime: python3.11
       Timeout: 900
       Code: package/
       Handler: handlers/triage.handler
@@ -311,7 +311,7 @@ Resources:
           - id: W89
             reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
     Properties:
-      Runtime: python3.9
+      Runtime: python3.11
       Timeout: 900
       Code: package/
       Handler: handlers/fix_code.handler
@@ -400,7 +400,7 @@ Resources:
           - id: W89
             reason: "Appropirate access controls are implemented via IAM roles to protect the services. No VPC only services are used"
     Properties:
-      Runtime: python3.9
+      Runtime: python3.11
       Timeout: 900
       Code: package/
       Handler: handlers/detect_error.handler
