@@ -42,7 +42,7 @@ def some_other_func():
     "source_code": [
         {{
             "filename": "foo.py",
-            "contents": "import boto3\n\ndef get_key(dict, key):\n    return dict.get(key)\n\ndef some_other_func():\n    return boto3.client('ec2')"
+            "contents": "import boto3\ndef get_key(dict, key):\n    return dict.get(key)\ndef some_other_func():\n    return boto3.client('ec2')"
         }}
     ]
 }}
