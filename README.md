@@ -72,7 +72,7 @@ export PARAMETER_STORE_PREFIX=/${STACK_NAME}/
 
 ```
 pip install -r requirements.txt
-bin/configure.py
+python3 bin/configure.py
 ```
 
 Re-run the above script if you need to make any changes. Alternatively, you can directly modify the SSM Parameter Store values which are stored under the ${PARAMETER_STORE_PREFIX} prefix.
