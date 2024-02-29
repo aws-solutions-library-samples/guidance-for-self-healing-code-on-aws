@@ -3,14 +3,6 @@ import os
 import boto3
 
 PROMPTS = {
-    "model_provider": {
-        "prompt": "Enter the name of the AI model provider. Supported values are bedrock or open_ai",
-        "default": "bedrock",
-    },
-    "open_ai_api_key": {
-        "prompt": "Enter your OpenAI API key (i.e. sk-xxxxx). Press enter to skip this if you are not using the open_ai model provider",
-        "default": "",
-    },
     "repo_url": {
         "prompt": "Enter the target repository's SSH URL (i.e. git@github.com:foo/bar.git)",
         "default": None,

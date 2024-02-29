@@ -4,7 +4,6 @@ import tempfile
 import time
 
 from providers.bedrock import Claude
-from providers.open_ai import GPT
 from source_code import GitHubProvider, clone_repo, create_branch, update_source_code
 from utils import get_config, get_logger
 
@@ -12,7 +11,6 @@ logger = get_logger()
 
 PARAMETER_NAMES = (
     "model_provider",
-    "open_ai_api_key",
     "repo_url",
     "repo_name",
     "repo_api_url",
@@ -45,8 +43,6 @@ def handler(event, context):
     # Select a model provider to perform the code generation
     if config["model_provider"] == "bedrock":
         provider = Claude(model_aws_region=MODEL_AWS_REGION)
-    elif config["model_provider"] == "open_ai":
-        provider = GPT(config["open_ai_api_key"])
     else:
         raise Exception(f"Invalid model provider: {config['model_provider']}")
     logger.info(f"Using model provider: {config['model_provider']}")
