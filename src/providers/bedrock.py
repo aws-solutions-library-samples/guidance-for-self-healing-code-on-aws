@@ -27,13 +27,10 @@ Provide a response in JSON format with the following keys:
 - source_code: an array of modified file objects with "filename" and "contents" keys
 
 <example code>
-import boto3
 
 def get_key(dict, key):
     return dict[key]
 
-def some_other_func():
-    return boto3.client('ec2')
 </example code>
 <example response>
 {{
@@ -41,8 +38,8 @@ def some_other_func():
     "title": "Handle KeyErrors in get_key",
     "source_code": [
         {{
-            "filename": "foo.py",
-            "contents": "import boto3\ndef get_key(dict, key):\n    return dict.get(key)\ndef some_other_func():\n    return boto3.client('ec2')"
+            "filename": "src/foo.py",
+            "contents": "def get_key(dict, key):\n    try:\n    value = dict[key]\n    except KeyError:\n        return None\n"
         }}
     ]
 }}

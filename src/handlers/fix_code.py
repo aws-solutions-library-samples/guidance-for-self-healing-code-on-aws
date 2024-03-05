@@ -152,3 +152,17 @@ def create_source_code_map(repo_dir, filenames):
         with open(os.path.join(repo_dir, filename), "r") as f:
             source_code_map[filename] = f.read()
     return source_code_map
+
+
+if __name__ == "__main__":
+
+    class MockContext:
+        aws_request_id = "1234"
+
+    error = """
+         [ERROR] KeyError: \'order_items\'\nTraceback (most recent call last):\n  File "/var/task/handlers/create_order.py", line 14, in handler\n    order_items = body["order_items"]
+         """
+    handler(
+        {"Records": [{"body": error}]},
+        MockContext(),
+    )
