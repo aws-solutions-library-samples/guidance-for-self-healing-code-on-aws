@@ -30,6 +30,12 @@ _You are responsible for the cost of the AWS services used while running this Gu
 - Python 3.9+
 - AWS CLI
 
+## Assumptions
+
+- Your existing application uses Amazon Cloudwatch logs. This solution currently hooks into CloudWatch log group to monitor your application logs for errors.
+- You use a git based source code management platform to host your code
+- Your appliation code is written in Python 3. The solution is currently tested only with Python 3 code bases.
+
 ### Operating System
 
 This solution supports build environments in Mac or Linux.
@@ -48,10 +54,18 @@ This deployment requires that you have access to the following AWS services:
 
 These deployment instructions are optimized to best work on Mac or Amazon Linux 2023. Deployment in another OS may require additional steps.
 
-1. Clone the repo using command `git clone https://github.com/aws-solutions-library-samples/guidance-for-self-healing-code-on-aws.git`
-2. cd to the repo folder `cd guidance-for-self-healing-code-on-aws`
-3. Install packages in requirements using command `pip install -r requirement.txt`
-4. Export the required environment variables:
+1. Gather following information about your existing application as these are inputs needed to configure the solution
+
+   - Git URL for your application code (eg: git@github.com:foo/bar.git)
+   - API URL for your git repository (eg: https://api.github.com/repos/foo/bar)
+   - Access Token or API Key for our repository. For Github, please refer [this link](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for steps to create one
+   - SSH private key with write permissions on your code repo.
+   - Name of the AWS Cloudwatch Log group for your application eg: /aws/lambda/your-lambda
+
+2. Clone the repo using command `git clone https://github.com/aws-solutions-library-samples/guidance-for-self-healing-code-on-aws.git`
+3. cd to the repo folder `cd guidance-for-self-healing-code-on-aws`
+4. Install packages in requirements using command `pip install -r requirement.txt`
+5. Export the required environment variables:
 
 ```
 # CloudFormation stack name.
@@ -60,24 +74,28 @@ export STACK_NAME=log-driven-bug-fixer
 # S3 bucket to store zipped Lambda function code for deployments.
 export DEPLOYMENT_S3_BUCKET=<NAME OF YOUR S3 BUCKET>
 
-# S3 bucket to store zipped Lambda function code for deployments. i.e. artifacts/
-export DEPLOYMENT_S3_BUCKET_PREFIX=<NAME OF YOUR S3 BUCKET PREFIX>
-
 # All variables and secrets for this project will be stored under this prefix.
 # You can define a different value if it's already in use.
 export PARAMETER_STORE_PREFIX=/${STACK_NAME}/
 ```
 
-5. Install Python dependencies and run the configuration wizard to securely store variables and secrets in SSM Parameter Store:
+5. Install Python dependencies:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
+```
+
+6. Run the configuration script and provide target application's Amazon CloudWatch log group and source control details. This will securely store variables and secrets in SSM Parameter Store
+
+```
+# Follow the resulting series of prompts to store configuration details in SSM Parameter Store. This steps will use information gathered during Step 1
+
 python3 bin/configure.py
 ```
 
 Re-run the above script if you need to make any changes. Alternatively, you can directly modify the SSM Parameter Store values which are stored under the ${PARAMETER_STORE_PREFIX} prefix.
 
-6. Deploy the AWS resources with CloudFormation:
+7. Deploy the AWS resources with CloudFormation:
 
 ```
 # Create a deployment package (Lambda function source code)
@@ -87,21 +105,13 @@ cloudformation/package.sh
 cloudformation/deploy.sh
 ```
 
-7. Run the configuration script to integrate the target application's Amazon CloudWatch log group and source control details.
-
-```
-# Follow the resulting series of prompts to store configuration details in SSM Parameter Store.
-
-python3 bin/configure.py
-```
-
 ## Deployment Validation
 
 Open CloudFormation console and verify the status of the template with the name of the stack specified in step 4 of the deployment steps.
 
 ## Running the Guidance
 
-Upon receiving a Python stack trace in the Amazon CloudWatch log group configured in Step 7, a pull request will be created in the source control system. Note that processing can take several minutes to complete.
+Upon receiving a Python stack trace in your application's Amazon CloudWatch log group configured in Step 6, a pull request will be created in the source control system. Note that processing can take several minutes to complete. If you want a quick validation of the solutiong, you can inject an error into your existing application which can result in a python stack trace in your application's logs
 
 Example output pull request in Github:
 

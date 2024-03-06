@@ -1,22 +1,19 @@
 import os
+import re
 
 import boto3
 
 PROMPTS = {
     "repo_url": {
-        "prompt": "Enter the target repository's SSH URL (i.e. git@github.com:foo/bar.git)",
-        "default": None,
-    },
-    "repo_name": {
-        "prompt": "Enter the target repository name (i.e. bar)",
+        "prompt": "Enter the target repository's SSH URL (i.e. git@github.com:foo/bar.git). This is the code repo for your application",
         "default": None,
     },
     "repo_api_url": {
-        "prompt": "Enter the target repository's API URL (i.e. https://api.github.com/repos/foo/bar)",
+        "prompt": "Enter the target repository's API URL. For github repos, https://api.github.com/repos/:owner/:repo (eg: https://api.github.com/repos/foo/bar)",
         "default": None,
     },
     "repo_api_key": {
-        "prompt": "Enter the target repository's API key (i.e. ghp_xxxxx)",
+        "prompt": "Enter the target repository's API key/access token (i.e. ghp_xxxxx). For github repos, please refer this link for creating an access token. https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
         "default": None,
     },
     "repo_ssh_private_key": {
@@ -25,7 +22,7 @@ PROMPTS = {
         "multiline": True,
     },
     "cloudwatch_log_group_name": {
-        "prompt": "Enter the CloudWatch log group name",
+        "prompt": "Enter the CloudWatch log group name for your existing application",
         "default": None,
     },
 }
@@ -44,6 +41,14 @@ def prompt_user_for_multiline(prompt):
 
     return "\n".join(lines) + "\n"
 
+   
+# Function to extract Repo Name from a git URL
+def get_repo_name(git_url):
+    strPattern = "([^/]+)\\.git$"
+    pattern = re.compile(strPattern)
+    matcher = pattern.search(git_url)
+    return matcher.group(1).replace(".git", "")
+ 
 
 def run(prefix):
     """Prompt the user for variables and secrets which will be stored under an SSM Parameter Store prefix."""
@@ -65,6 +70,9 @@ def run(prefix):
             if user_input or prompt_info["default"] is not None:
                 responses[key] = user_input if user_input else prompt_info["default"]
                 break
+
+    # Extract the repo name from the repo URL
+    responses["repo_name"] = get_repo_name(responses["repo_url"])
 
     # Store the values in SSM Parameter Store
     ssm = boto3.client("ssm")
