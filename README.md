@@ -34,7 +34,7 @@ _You are responsible for the cost of the AWS services used while running this Gu
 
 - Your existing application uses Amazon Cloudwatch logs. This solution currently hooks into CloudWatch log group to monitor your application logs for errors.
 - You use a git based source code management platform to host your code
-- Your appliation code is written in Python 3. The solution is currently tested only with Python 3 code bases.
+- Your application code is written in Python 3. The solution is currently tested only with Python 3 code bases.
 
 ### Operating System
 
