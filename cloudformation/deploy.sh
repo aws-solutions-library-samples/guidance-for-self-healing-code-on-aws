@@ -13,7 +13,7 @@ echo "Creating deployment package"
 aws cloudformation package \
     --template-file template.yaml \
     --s3-bucket ${DEPLOYMENT_S3_BUCKET} \
-    --s3-prefix ${DEPLOYMENT_S3_BUCKET_PREFIX} \
+    --s3-prefix ${STACK_NAME} \
     --output-template-file template-packaged.yaml
 
 aws cloudformation deploy \
