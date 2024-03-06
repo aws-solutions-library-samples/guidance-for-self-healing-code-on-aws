@@ -79,13 +79,13 @@ export DEPLOYMENT_S3_BUCKET=<NAME OF YOUR S3 BUCKET>
 export PARAMETER_STORE_PREFIX=/${STACK_NAME}/
 ```
 
-5. Install Python dependencies:
+6. Install Python dependencies:
 
 ```
 pip3 install -r requirements.txt
 ```
 
-6. Run the configuration script and provide target application's Amazon CloudWatch log group and source control details. This will securely store variables and secrets in SSM Parameter Store
+7. Run the configuration script and provide target application's Amazon CloudWatch log group and source control details. This will securely store variables and secrets in SSM Parameter Store
 
 ```
 # Follow the resulting series of prompts to store configuration details in SSM Parameter Store. This steps will use information gathered during Step 1
@@ -95,7 +95,7 @@ python3 bin/configure.py
 
 Re-run the above script if you need to make any changes. Alternatively, you can directly modify the SSM Parameter Store values which are stored under the ${PARAMETER_STORE_PREFIX} prefix.
 
-7. Deploy the AWS resources with CloudFormation:
+8. Deploy the AWS resources with CloudFormation:
 
 ```
 # Create a deployment package (Lambda function source code)
@@ -111,7 +111,7 @@ Open CloudFormation console and verify the status of the template with the name 
 
 ## Running the Guidance
 
-Upon receiving a Python stack trace in your application's Amazon CloudWatch log group configured in Step 6, a pull request will be created in the source control system. Note that processing can take several minutes to complete. If you want a quick validation of the solutiong, you can inject an error into your existing application which can result in a python stack trace in your application's logs
+Upon receiving a Python stack trace in your application's Amazon CloudWatch log group configured in Step 6, a pull request will be created in the source control system. Note that processing can take several minutes to complete. If you want a quick validation of the solution, you can inject an error into your existing application which can result in a python stack trace in your application's logs
 
 Example output pull request in Github:
 
