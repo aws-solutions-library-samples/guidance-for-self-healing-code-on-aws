@@ -21,6 +21,14 @@ This repo contains an end to end system which combines Amazon CloudWatch, AWS La
 
 ![architecture](assets/images/architecture.png)
 
+1. The AWS Lambda ‘Error Logs Processor’ function receives application error logs via an Amazon CloudWatch Logs subscription and filter. All AWS Lambda functions assume an AWS IAM role scoped with minimum permissions to access the required resources.
+2. The stack trace in the application error log is md5-hashed for uniqueness and stored in an Amazon DynamoDB table to track its processing state. Each item in the table represents a unique error message.
+3. The AWS Lambda function ‘Event Processor’ obtains events from Amazon DynamoDB Stream and sends to Amazon SQS for batch processing.
+4. Amazon SQS enqueues messages to enable batch processing and concurrency control for the Amazon Lambda ’Code Optimizer’ function.
+5. The AWS Lambda ‘Code Optimizer’ function builds a prompt that includes source code and the relevant error message. The SSH key to access the Git repository is retrieved from AWS Systems Manager Parameter Store. It invokes the Amazon Bedrock Large Language Model (LLM) with the prompt, which includes modified source code as a response.
+6. The AWS Lambda ‘Code Optimizer’ function commits the modified source code into a new Git branch. The Git branch and its corresponding pull request are pushed to the source control system via GitHub API.
+7. Git users review the pull request for testing and integration.
+
 ### Cost
 
 The following table provides a sample cost breakdown for deploying this
