@@ -23,7 +23,26 @@ This repo contains an end to end system which combines Amazon CloudWatch, AWS La
 
 ### Cost
 
-_You are responsible for the cost of the AWS services used while running this Guidance. As of February 2024, the cost for running this Guidance with the default settings in the US East (N. Virginia) is approximately $<REPLACE_ME> per month for processing <REPLACE_ME> records._
+The following table provides a sample cost breakdown for deploying this
+Guidance with the default parameters in the US East (N. Virginia) Region
+for one month.
+
+| **AWS service**   | Dimensions                                             | Monthly cost \[USD\] |
+| ----------------- | ------------------------------------------------------ | -------------------- |
+| Amazon DynamoDB   | Average item size 0.5kb, 0.5 RCU and 1 WCU per message | \$ 17.08             |
+| Amazon CloudWatch | 33kb of logs written and stored per message            | \$ 8.77              |
+| AWS Lambda        | 45 seconds execution time per unique error message     | \$ 2.43              |
+| Amazon SQS        | 3 requests per message, 1k message size                | \$ 0.01              |
+| Amazon Bedrock    | 1,000 input tokens, 1,000 output tokens                | \$ 32.00             |
+| Total             |                                                        | \$ 60.29             |
+
+#### Cost assumptions
+
+- 1,000,000 error messages processed in a month (1,000 unique errors).
+- Free-tier not included in costs.
+- 1,000 Claude v2 input and output tokens required per message processed.
+- Amazon DynamoDB table uses standard table class, on-demand capacity.
+- AWS Lambda functions provisioned with 128mb memory and x86 architecture.
 
 ## Prerequisites
 
@@ -49,6 +68,7 @@ This deployment requires that you have access to the following AWS services:
 - Amazon Bedrock
 - Amazon Simple Queue Service (SQS)
 - Amazon DynamoDB
+- Amazon Systems Manager - Parameter Store
 
 ## Deployment Steps
 
@@ -69,9 +89,10 @@ These deployment instructions are optimized to best work on Mac or Amazon Linux 
 
 ```
 # CloudFormation stack name.
-export STACK_NAME=log-driven-bug-fixer
+export STACK_NAME=self-healing-code
 
 # S3 bucket to store zipped Lambda function code for deployments.
+# Note: the S3 bucket must be in the same region as the CloudFormation stack deployment region.
 export DEPLOYMENT_S3_BUCKET=<NAME OF YOUR S3 BUCKET>
 
 # All variables and secrets for this project will be stored under this prefix.

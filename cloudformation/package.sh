@@ -5,9 +5,10 @@ cd .build
 
 # Create virtualenv and activate
 echo "Creating virtualenv"
-python3 -m venv log-driven-bug-fixer-build
+
+python3 -m venv self-healing-code-build
 python3 --version
-source log-driven-bug-fixer-build/bin/activate
+source self-healing-code-build/bin/activate
 
 # Install Python dependencies
 mkdir -p package
@@ -20,4 +21,3 @@ deactivate
 # Copy source code
 echo "Copying source code into deployment package"
 rsync -av --exclude '__pycache__/' ../src/ package/
-

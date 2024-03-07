@@ -97,7 +97,7 @@ if __name__ == "__main__":
         prefix = os.environ["PARAMETER_STORE_PREFIX"]
     except KeyError:
         print(
-            "PARAMETER_STORE_PREFIX variable not defined. Export this value and run the command again (i.e. export PARAMETER_STORE_PREFIX=log-driven-bug-fixer/)"
+            "PARAMETER_STORE_PREFIX variable not defined. Export this value and run the command again (i.e. export PARAMETER_STORE_PREFIX=self-healing-code/)"
         )
         exit(1)
 
