@@ -29,6 +29,15 @@ This repo contains an end to end system which combines Amazon CloudWatch, AWS La
 6. The AWS Lambda ‘Code Optimizer’ function commits the modified source code into a new Git branch. The Git branch and its corresponding pull request are pushed to the source control system via GitHub API.
 7. Git users review the pull request for testing and integration.
 
+### AWS services
+
+- [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+- [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+- [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)
+- [Amazon Simple Queue Service (SQS)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
+- [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+- [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
+
 ### Cost
 
 The following table provides a sample cost breakdown for deploying this
@@ -76,7 +85,7 @@ This deployment requires that you have access to the following AWS services:
 - Amazon Bedrock
 - Amazon Simple Queue Service (SQS)
 - Amazon DynamoDB
-- Amazon Systems Manager - Parameter Store
+- AWS Systems Manager - Parameter Store
 
 ## Deployment Steps
 
