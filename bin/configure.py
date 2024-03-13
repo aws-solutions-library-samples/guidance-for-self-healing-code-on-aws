@@ -47,7 +47,7 @@ def get_repo_name(git_url):
 
 
 def get_repo_project(git_url):
-    pattern = r"https://github.com/([^/]+)/([^/]+)"
+    pattern = r"git@github.com:([^/]+)/([^/]+)"
     match = re.match(pattern, git_url)
     if match:
         return match.group(1)
