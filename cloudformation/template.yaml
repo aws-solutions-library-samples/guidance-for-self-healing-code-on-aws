@@ -320,7 +320,7 @@ Resources:
         TargetArn: !GetAtt LambdaDlq.Arn
       KmsKeyArn: !GetAtt KmsKey.Arn
       Layers:
-        - !Sub arn:aws:lambda:${AWS::Region}:553035198032:layer:git:14
+        - !Sub arn:aws:lambda:${AWS::Region}:553035198032:layer:git-lambda2:8
       Role: !GetAtt FixCodeFunctionRole.Arn
       Environment:
         Variables:
