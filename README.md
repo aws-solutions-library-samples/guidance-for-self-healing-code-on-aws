@@ -1,4 +1,4 @@
-# Guidance for Self-Healing Code on AWS guidance
+# Guidance for Self-Healing Code on AWS
 
 ## Table of Contents
 
