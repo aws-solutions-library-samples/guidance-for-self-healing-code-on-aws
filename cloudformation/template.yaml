@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: >
-  Resources for the LogDrivenBugFixer app
-
+  Resources for the LogDrivenBugFixer app (SO9406)
+  
 Parameters:
   ParameterStorePrefix:
     Type: String
