@@ -71,7 +71,7 @@ class Claude(Model):
             model_id=model_id,
             model_kwargs={
                 "temperature": 0.0,
-                "max_tokens_to_sample": 60000,
+                "max_tokens_to_sample": 10000,
                 "top_p": 0.999,
                 "top_k": 250,
                 "stop_sequences": [
