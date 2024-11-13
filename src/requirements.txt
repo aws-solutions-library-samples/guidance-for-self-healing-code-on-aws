@@ -1,6 +1,6 @@
 requests==2.31.0
 GitPython==3.1.41
-langchain==0.0.333
+langchain==0.1.11
 boto3==1.33.8
 openai==0.27.8
 black==23.1.0
